@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How to save on your next energy bill? Easy! See rates from all electric & natural gas suppliers in your area here, switch to the best rate in a few clicks.">
+    <meta name="author" content="Power Kiosk">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="canonical" href="https://powerkioskdirect.com">
+
+    <meta name="google-site-verification" content="rHnGsp0Vo2OL_nPGhkkQUgHq5H3AO1m_AE9wZ6eF9Dw" />
+
+    <title>Compare Energy Rates, Switch, Save: Power Kiosk Direct</title>
+
+    <link href="assets/css/v3/pk.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+						<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+						<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+				<![endif]-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86402462-1', {
+            'siteSpeedSampleRate': 100
+        });
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview', {
+            'page': location.pathname + location.search + location.hash
+        });
+    </script>
+
+</head>
+
+<body class="scrollbar" data-spy="scroll" data-target=".navbar" data-offset="76">
+    <div id="home" data-bind="fadeVisible: showInputPage" vocab="http://schema.org/" typeof="rdfs:Class" resource="http://schema.org/WebPage">
+        <div id="wrapper">
+            <div id="slide-1">
+                <span style="display: none" data-bind="visible: showPromoCodeAffinityAlert() && !promoCodeAppliedError()">
+				    <div class="alert alert-success text-center hidden-xs hidden-sm" style="margin: 0" >Sales Code Applied: <span data-bind="text: agentId"></span></div>
+                </span>
+                <span style="display: none" data-bind="visible: showPromoCodeAffinityAlert() && !promoCodeAppliedError()">
+					<div class="alert alert-success text-center visible-xs visible-sm" style="margin-top: 62px">Sales Code Applied: <span data-bind="text: agentId"></span></div>
+                </span>
+                <form>
+                    <div id="hero" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -500px;">
+                        <div class="hero-container">
+                            <div class="container-fluid hero-content skrollable skrollable-between" data-anchor-target="#slide-1">
+                                <div class="row">
+                                    <div class="hidden-xs hidden-sm col-sm-12 col-md-6">
+                                        <div id="logo">
+                                            <a><img data-bind="attr: {'src': logo }, visible: finishedAgentsInit" style="display: none" /></a>
+                                        </div>
+                                        <div class="big-title">
+                                            <h1>How can you get the right Electric &amp; Natural Gas offers? Easy.</h1>
+                                        </div>
+                                        <div class="alert-wrapper">
+                                            <div class="alert alert-success" style="display: none;" data-bind="visible: promoCodeAppliedSuccess">Sales Code Successfully Applied!</div>
+                                            <div class="alert alert-danger" style="display: none;" data-bind="visible: promoCodeAppliedError">That Sales Code Does Not Exist!</div>
+                                            <div class="alert alert-danger" style="display: none;" data-bind="visible: rateRequestViewModelErrorShow, text: rateRequestViewModelErrorText"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="row">
+                                            <div class="hero-bg col-sm-12">
+                                                <div class="row hidden-xs hidden-sm">
+                                                    <div class="col-sm-12">
+                                                        <div class="top-nav text-center">
+                                                            <a href="#" style="cursor: pointer; display: none" class="nav-link" data-toggle="modal" data-target="#promoCodeModal" data-bind="visible: showPromoCode">
+                                                                <i class="fa fa-tag"></i>
+                                                                <span>Sales Code</span>
+                                                            </a>
+                                                            <a href="#" style="cursor: pointer; display: none" class="nav-link" data-bind="visible: !showPromoCode(), click: ClearPromoCode">
+                                                                <i class="fa fa-tag"></i>
+                                                                <span>Clear Sales Code</span>
+                                                            </a>
+                                                            <a href="https://broker.powerkiosk.com/security/signIn" class="nav-link">
+                                                                <i class="fa fa-user"></i>
+                                                                <span>Agent Login</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="visible-xs visible-sm col-sm-12 col-md-6">
+                                                        <div class="big-title text-center">
+                                                            <h1>How to Save on Electric &amp; Natural Gas Bills? Easy.</h1>
+                                                        </div>
+                                                        <div class="alert-wrapper">
+                                                            <div class="alert alert-success" style="display: none;" data-bind="visible: promoCodeAppliedSuccess">Sales Code Successfully Applied!</div>
+                                                            <div class="alert alert-danger" style="display: none;" data-bind="visible: promoCodeAppliedError">That Sales Code Does Not Exist!</div>
+                                                            <div class="alert alert-danger" style="display: none;" data-bind="visible: rateRequestViewModelErrorShow, text: rateRequestViewModelErrorText"></div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="text-center">
+                                                            <h2>Compare Energy Rates</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-bind="visible: !finishedServiceTypesInit() || !finishedAgentsInit()">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true" style="color: #1a2674; font-size: 2em;"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-bind="visible: finishedServiceTypesInit() && finishedAgentsInit()" style="display: none;">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="visible-xs visible-sm business-types text-center">
+                                                                <div class="btn-group btn-group-justified" data-toggle="buttons" data-bind="foreach: businessTypes">
+                                                                    <label data-bind="click: $root.chooseBusiness, css: {'active': $root.businessType() == value}" class="btn btn-warning">
+                                                                        <input type="radio" data-bind="value: value, checked: $root.businessType">
+                                                                        <span data-bind="text: name"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="row small" style="color: black; display: none; padding: 0; margin: 0" data-bind="visible: isNotResidential">
+                                                                    <div class="col-xs-4" style="padding: 0;">
+                                                                    </div>
+                                                                    <div class="col-xs-4" style="padding: 0;">
+                                                                        <em>
+                                                                                    <span data-bind="text: businessSupplementalText, visible: isNotResidential() && !isRFQ()">(monthly bill &lt;$10K)</span>
+                                                                                </em>
+                                                                        <a data-bind="visible: isNotResidential() && !isRFQ()" href="#" onclick="return false;" role="button" class="btn tooltip-popover" style="margin-top: -4px; font-size: 1.2rem; cursor: pointer;" rel="popover" data-content="<strong>Business? <br>We've Got You Covered</strong><br>Large vs. Small Business: if your monthly bill's over $10,000, you qualify as a large business and &mdash; the good part &mdash; the rate savings will add up that much more on your next bill. Either way, you save the most with PowerKioskDirect." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top">
+                                                                            <i class="fa fa-question-circle"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-4" style="padding: 0;">
+                                                                        <em>
+                                                                                    <span data-bind="text: businessSupplementalText, visible: isRFQ">(monthly bill &gt$10K)</span>
+                                                                                </em>
+                                                                        <a data-bind="visible: isRFQ" href="#" onclick="return false;" role="button" class="btn tooltip-popover" style="margin-top: -4px; font-size: 1.2rem; cursor: pointer;" rel="popover" data-content="<strong>Business? <br>We've Got You Covered</strong><br>Large vs. Small Business: if your monthly bill's over $10,000, you qualify as a large business and &mdash; the good part &mdash; the rate savings will add up that much more on your next bill. Either way, you save the most with PowerKioskDirect." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top">
+                                                                            <i class="fa fa-question-circle"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="hidden-xs hidden-sm business-types text-center">
+                                                                <div class="btn-group btn-group-justified" data-toggle="buttons" data-bind="foreach: businessTypes">
+                                                                    <label data-bind="click: $root.chooseBusiness, css: {'active': $root.businessType() == value}" class="btn btn-warning">
+                                                                        <input type="radio" data-bind="value: value, checked: $root.businessType">
+                                                                        <span data-bind="text: name"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="row small" style="color: black; display: none; padding: 0; margin: 0" data-bind="visible: isNotResidential">
+                                                                    <div class="col-md-4" style="padding: 0;">
+                                                                    </div>
+                                                                    <div class="col-md-4" style="padding: 0;">
+                                                                        <em><span data-bind="text: businessSupplementalText, visible: isNotResidential() && !isRFQ()"></span></em>
+                                                                        <a data-bind="visible: isNotResidential() && !isRFQ()" href="#" onclick="return false;" role="button" class="btn tooltip-popover" style="margin-top: -4px; font-size: 1.2rem; cursor: pointer;" rel="popover" data-content="<strong>Business? <br>We've Got You Covered</strong><br>Large vs. Small Business: if your monthly bill's over $10,000, you qualify as a large business and &mdash; the good part &mdash; the rate savings will add up that much more on your next bill. Either way, you save the most with PowerKioskDirect." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                                                    </div>
+                                                                    <div class="col-md-4" style="padding: 0;">
+                                                                        <em><span data-bind="text: businessSupplementalText, visible: isRFQ"></span></em>
+                                                                        <a data-bind="visible: isRFQ" href="#" onclick="return false;" role="button" class="btn tooltip-popover" style="margin-top: -4px; font-size: 1.2rem; cursor: pointer;" rel="popover" data-content="<strong>Business? <br>We've Got You Covered</strong><br>Large vs. Small Business: if your monthly bill's over $10,000, you qualify as a large business and &mdash; the good part &mdash; the rate savings will add up that much more on your next bill. Either way, you save the most with PowerKioskDirect." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row vpadding-20 power-types">
+                                                        <!-- ko foreach: serviceTypes -->
+                                                        <div class="col-xs-6 col-sm-6 col-md-4" data-bind="css: {'col-md-offset-2': $index() == 0 }">
+                                                            <div class="icon-group text-center" data-bind="css: {'active': $root.serviceTypeId() == serviceTypeId }, click: $root.chooseServiceType">
+                                                                <i id="icon" class="fa icon-round-material material-orange" data-bind="css: icon"></i>
+                                                                <span class="capitalize" data-bind="text: name"></span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /ko -->
+                                                        <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                                                            <div class="alert alert-warning" style="display: none;" data-bind="visible: serviceAlertShow, text: serviceAlertText"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                                                            <div class="form-group">
+                                                                <input type="text" id="zipCode" class="form-control input-lg text-center" placeholder="Enter Zip" data-bind="textInput: zipCode, enable: zipCodeEnabled" />
+                                                            </div>
+                                                            <i class="fa fa-spinner fa-spin fa-2x" data-bind="visible: !zipCodeEnabled()" style="display: none; color: black"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                                                            <div class="alert alert-warning" style="display: none;" data-bind="visible: utilityAlertShow, text: utilityAlertText"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                                                            <span style="color: #28569C" data-bind="visible: utilityName() != 'Your Utility Company'">Select Your Utility Company if Different</span>
+                                                            <div class="dropdown btn-group-lg" data-bind="visible: utilityShow">
+                                                                <button class="btn btn-default btn-lg btn-block dropdown-toggle" type="button" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    <span class="dropdown-text capitalize" data-bind="text: utilityName, style: {'font-size': (utilityName().length < 13 ? '100%' : '85%')}"></span>
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu utilities-dropdown" aria-labelledby="utilitiesDropdown" data-bind="foreach: utilities">
+                                                                    <li>
+                                                                        <a href="#/" data-bind="text: name, click: $root.chooseUtility" class="capitalize"></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row vpadding-top-15">
+                                                        <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                                                            <div class="dropdown btn-group-lg" data-bind="visible: zoneShow">
+                                                                <button class="btn btn-default btn-lg btn-block dropdown-toggle" type="button" id="zonesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    <span class="dropdown-text capitalize" data-bind="text: zoneName, style: {'font-size': (zoneName().length < 13 ? '100%' : '85%')}"></span>
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu zones-dropdown" aria-labelledby="zonesDropdown" data-bind="foreach: zones">
+                                                                    <li>
+                                                                        <a href="#/" data-bind="text: name, click: $root.chooseZone"></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="hero-bg-bottom"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+
+                                        <div class="row" data-bind="visible: finishedServiceTypesInit() && finishedAgentsInit()" style="display: none;">
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="hidden-xs hidden-sm vpadding-10"></div>
+                                                    <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                                                        <button class="btn btn-primary btn-block" id="saveMoneyNow" data-bind="click: GetRates, visible: getRatesShow, enable: getRatesEnabled">
+                                                            <i class="fa fa-usd"></i>
+                                                            <span class="lt-blue" data-bind="text: getRatesText">Save Money Now!</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row hidden-xs">
+                                    <h3 class="pkd-header"><strong class="pkd-innerheader">You'll need:</strong>
+                                                <br>
+                                                <span class="badge-1"><span class="badge">1</span> A recent utility bill, for your existing rate (below).</span>
+                                                <span class="badge">2</span> 5 minutes (or less).
+                                            </h3>
+                                </div>
+                                <div class="row visible-xs">
+                                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default powerkiosk-panel">
+                                            <div class="panel-heading" role="tab">
+                                                <div class="col-md-12">
+                                                    <h3 class="pkd-header"><strong class="pkd-innerheader">You'll need:</strong>
+                                                                <br>
+                                                                <div class="badge-xs">
+                                                                <div class="row">
+                                                                    <div class="col-xs-1" style="padding: 0">
+                                                                        <span class="badge">1</span><br>
+                                                                        <span class="badge" style="margin-top: 17px;">2</span>
+                                                                    </div>
+                                                                    <div class="col-xs-11" style="padding: 0">
+                                                                        A recent utility bill, for your existing rate (below).<br>
+                                                                        5 minutes (or less).
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <nav class="navbar navbar-default navbar-fixed-top" data-toggle="sticky-onscroll" role="navigation">
+                <div class="navbar-header">
+                    <button class="visible-xs visible-sm pull-right hamburger hamburger--spin js-hamburgernavbar-toggle btn collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+                        <span class="hamburger-box">
+                                                                <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <span style="cursor: pointer" class="navbar-brand" data-bind="click: reloadPage">
+                                                        <img class="visible-xs visible-sm" data-bind="attr: {'src': logo }, visible: finishedAgentsInit" style="display: none" />
+                                                        <img class="hidden-xs hidden-sm" data-bind="attr: {'src': logo2 }, visible: finishedAgentsInit" style="display: none" />
+                                                </span>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+
+                    <div class="row visible-xs visible-sm">
+                        <div class="col-sm-12">
+                            <div class="top-nav text-center">
+                                <a href="#" style="cursor: pointer; display: none" class="nav-link" data-toggle="modal" data-target="#promoCodeModal" data-bind="visible: showPromoCode">
+                                    <i class="fa fa-tag"></i>
+                                    <span>Sales Code</span>
+                                </a>
+                                <a href="#" style="cursor: pointer; display: none" class="nav-link" data-bind="visible: !showPromoCode(), click: ClearPromoCode">
+                                    <i class="fa fa-tag"></i>
+                                    <span>Clear Sales Code</span>
+                                </a>
+                                <a href="https://broker.powerkiosk.com/security/signIn" class="nav-link">
+                                    <i class="fa fa-user"></i>
+                                    <span>Agent Login</span>
+                                </a>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                        <li class="menu-1"><a class="collapse-menu1" href="#why-switch">Why Switch?</a>
+                            <div class="notch notch-bottom"></div>
+                        </li>
+                        <li class="menu-2"><a class="collapse-menu1" href="#faqs">Rate FAQs</a>
+                            <div class="notch notch-bottom"></div>
+                        </li>
+                        <li class="menu-3"><a class="collapse-menu1" href="#testimonials">Testimonials</a>
+                            <div class="notch notch-bottom"></div>
+                        </li>
+                        <li class="menu-4"><a class="collapse-menu1" href="#markets">States We Serve</a>
+                            <div class="notch notch-bottom"></div>
+                        </li>
+                        <li class="menu-5"><a class="collapse-menu1" href="#contact">Contact</a>
+                            <div class="notch notch-bottom"></div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section id="why-switch" class="container-fluid vpadding-60">
+                <div class="vpadding-30"></div>
+                <div class="main-padding">
+                    <div class="row">
+                        <div class="col-sm-12 text-center vpadding-20">
+                            <h2 class="text-warning">Why Switch? The Power of <em>Choice</em>.</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-md-4 text-center vpadding-20">
+                                    <i class="fa fa-laptop fa-lg"></i>
+                                    <div class="heading">Think Kayak.com or Hotels.com: see guaranteed (fixed) rates for top energy suppliers in your area.</div>
+                                </div>
+                                <div class="col-md-4 text-center vpadding-20">
+                                    <i class="fa fa-check-circle-o fa-lg"></i>
+                                    <div class="heading">Switch to your new plan with our easy, hassle-free sign-up, get e-notified when it kicks in.</div>
+                                </div>
+                                <div class="col-md-4 text-center vpadding-20">
+                                    <i class="fa fa-usd fa-lg"></i>
+                                    <div class="heading">Start saving today! Up to <span class="heading-big"><strong>40%</strong></span> off your current electricity or gas rate &mdash; in a few clicks. Yes, really.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="panel-group" id="accordion-panel2" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default powerkiosk-panel">
+                                        <div class="panel-heading" role="tab" id="headingOne-panel2">
+                                            <h3 class="text-warning">
+                                                        <u><a class="pkd-header pkd-innerheader" name="suppliers" role="button" data-toggle="collapse" data-parent="#accordion-panel2" href="#collapseOne-panel2" aria-expanded="true" aria-controls="collapseOne-panel2">
+                                                            How much could you save? <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                        </a></u>
+                                                    </h3>
+                                        </div>
+                                        <div id="collapseOne-panel2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-panel2">
+                                            <div class="panel-body pkd-body">
+                                                <p>
+                                                    If you're a perfectly average U.S. residence* using 911 kWh of electricity/month... by switching your supply rate from a <u><a href="http://www.eia.gov/outlooks/steo/report/electricity.cfm" target="_blank">12 cent per kWh avg.</a></u> in 2017, for example, to 7 cents, you'll cut your monthly bill by <strong>$45.55</strong>.
+                                                </p>
+                                                <p>
+                                                    That's an extra forty bucks in your pocket, every month! And just imagine how much the savings add up if, like an average business, you consume way more energy than that.
+                                                </p>
+                                                <p>
+                                                    Think about it: in a fraction of the time it takes to dial up the cable company to switch your cheaper TV/internet plan, you can save as much or more on your monthly bills with us. Search by zip and try it yourself.
+                                                </p>
+                                                <p>
+                                                    <em>*<u><a href="http://insideenergy.org/2014/05/22/using-energy-how-much-electricity-do-you-use-each-month/">"How Much Electricity Do You Use Each Month?"</a></u> - InsideEnergy.org</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                <div class="panel-heading" role="tab" id="headingOne-panel3">
+                                                    <h3 class="text-warning">
+                                                        <u><a class="pkd-header pkd-innerheader" name="suppliers" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseOne-panel3" aria-expanded="true" aria-controls="collapseOne-panel3">
+                                                            Help offset carbon emissions <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                        </a></u>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapseOne-panel2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-panel2">
+                                                    <div class="panel-body pkd-body">
+                                                        <p>
+                                                            If you're a perfectly average U.S. residence* using 911 kWh of electricity/month... by switching your supply rate from a <u><a href="http://www.eia.gov/outlooks/steo/report/electricity.cfm" target="_blank">12 cent per kWh avg.</a></u> in 2017, for example, to 7 cents, you'll cut your monthly bill by <strong>$45.55</strong>.
+                                                        </p>
+                                                        <p>
+                                                            That's an extra forty bucks in your pocket, every month! And just imagine how much the savings add up if, like an average business, you consume way more energy than that.
+                                                        </p>
+                                                        <p>
+                                                            Think about it: in a fraction of the time it takes to dial up the cable company to switch your cheaper TV/internet plan, you can save as much or more on your monthly bills with us. Search by zip and try it yourself.
+                                                        </p>
+                                                        <p>
+                                                            <em>*<u><a href="http://insideenergy.org/2014/05/22/using-energy-how-much-electricity-do-you-use-each-month/">"How Much Electricity Do You Use Each Month?"</a></u> - InsideEnergy.org</em>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faqs" class="container-fluid vpadding-30">
+                <div class="vpadding-30"></div>
+                <div class="main main-padding">
+                    <div class="row">
+                        <div class="col-sm-12 text-center vpadding-20">
+                            <h2 class="text-white">Electric &amp; Natural Gas Bills, Explained</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="img-responsive bill-image" width="960" src="assets/img/bill-image.jpg" />
+                        <div class="panel-group" style="margin-bottom: 0;">
+                            <div class="panel panel-default powerkiosk-panel" style="padding-bottom: 0; padding-top: 5px;">
+                                <div class="panel-heading">
+                                    <p class="text-primary-light text-white pkd-body">
+                                        Find your existing energy supply rate on a recent bill, to the left of your "Generation Charge" or "Supplier Charge" (they're the same thing).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vpadding-30">
+                        <div class="panel-group" id="accordion-panel3" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingOne-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseOne-panel3" aria-expanded="true" aria-controls="collapseOne-panel3">
+                                                    "How can you save me 20-40% on my energy bill?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseOne-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <p class="text-warning-light">
+                                            If you live in a <u><a href="https://powerkioskdirect.com/#markets">state where energy's deregulated</a></u>, you may be able to save considerably on your current bill by switching your electricity and natural gas suppliers. This depends on your state and local utility.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            By showing you the best energy rates in your area all at once, the <strong>Power Kiosk platform</strong> acts as a marketplace where each supplier competes to win your business. We also work hand-in-hand with our partners to offer special online rates &mdash; lower than you'll find elsewhere.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingTwo-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseTwo-panel3" aria-expanded="true" aria-controls="collapseTwo-panel3">
+                                                    "How do I know Power Kiosk Direct energy rates are competitive?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseTwo-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <p class="text-warning-light">
+                                            Thanks to years of industry experience, broker relationships, and the competition introduced by our proprietary comparison shopping technology, we're able to offer you competitive electricity and natural gas rates on the market. And unlike junk-mail promotional offers, Power Kiosk Direct rates are fixed &mdash; <strong>guaranteed</strong> &mdash; over the course of your plan. They don't go up after you switch.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            State-by-state, you'll see that shorter-term plans can be cheaper than long-term plans, OR vice-versa. This depends on factors like wholesale market forecast (supply/demand) for each state.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            The competitive prices come from reputable and vetted suppliers with a track record of delivering high-quality service.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingThree-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseThree-panel3" aria-expanded="true" aria-controls="collapseThree-panel3">
+                                                    "Are there any other reasons I should switch?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseThree-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <p class="text-warning-light">
+                                            In deregulated states, there are a couple very good reasons to evaluate your current supply plan and switch using Power Kiosk Direct EVEN IF the potential rate savings isn't considerable.
+                                        </p>
+                                        <h4 class="text-primary-light" style="margin-bottom:0;">1) Fixed rate vs. variable rate</h4>
+                                        <p class="text-warning-light">
+                                            All Power Kiosk Direct supply rates are <strong>fixed</strong> for residential and small business customers, meaning you pay a fixed cost for energy over the time period you see listed for each plan. (Large commercial account? Depending on your business needs and market conditions, we can negotiate variable terms directly with suppliers.) No "act now" promotional rates. No airline mile gimmicks. And, importantly, your rate doesn't spike due to changes in the wholesale market.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            If you're not sure whether your existing plan is fixed or variable, see "[usage] kWh x [rate]" under the <strong>Supply or Generation Charges</strong> section on your bill that shows your current rate, and check it against past bills online (or call your local utility).
+                                        </p>
+                                        <h4 class="text-primary-light" style="margin-bottom:0;">2) Going green: eco-friendly energy</h4>
+                                        <p class="text-warning-light">
+                                            Looking for clean energy options &mdash; like electricity produced by renewable resources? In many markets Power Kiosk has cost-effective renewable energy plans available that can help you reduce your footprint today. <u><a target="_blank" href="http://thesolutionsproject.org">What's renewable energy?</a></u>
+                                        </p>
+                                        <p class="text-warning-light">
+                                            "Going green" shouldn't have to break the bank. We're working with our electricity &amp; natural gas partners to bring additional green energy plans to every market we serve <strong>(see below)</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingFour-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseFour-panel3" aria-expanded="true" aria-controls="collapseFour-panel3">
+                                                    "What does the "green %" mean next to each plan?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseFour-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <img src="assets/img/green-percentage.jpg" />
+                                        <p class="text-warning-light">
+                                            This symbol indicates the approximate % of a plan's energy supply that comes from renewable sources &mdash; like solar, geothermal, hydroelectric or wind.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            Are you a supplier? <u><a href="mailto:support@powerkiosk.com">Contact us</a></u> to start offering renewable energy choice today.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingFive-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" name="suppliers" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseFive-panel3" aria-expanded="true" aria-controls="collapseFive-panel3">
+                                                    "How long does it take to switch &mdash; can I switch today?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseFive-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <p class="text-warning-light">
+                                            Yes, you can switch securely online &mdash; at your desktop, laptop, tablet or smartphone &mdash; in 5 minutes or less with a copy of your current bill! No paper forms to fill out, no mailing necessary.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            There's no interruption in your service, no switch fee, and you'll get the same bill from your local utility. For commercial businesses (those with an energy bill over $10K/month): you can start the switch process on PowerKioskDirect.com, and a dedicated sales rep will follow up directly.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            The switch time varies for each utility company and can take a few weeks for an effective switch to happen.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingSix-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" name="suppliers" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseSix-panel3" aria-expanded="true" aria-controls="collapseSix-panel3">
+                                                    "Once I've signed up, is that it? How do I renew my plan?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseSix-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <p class="text-warning-light">
+                                            Once you complete the sign-up process and receive a confirmation email with the details of your plan (rate/plan duration/supplier), just: 1) save the confirmation email for your records (the sender will appear as "support@powerkiosk.com"), and 2) look for the switch to be reflected on your next utility bill.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            To renew your Power Kiosk Direct plan, it's just as easy: we'll send e-reminders to the email address we have on file <strong>6 months</strong>, <strong>3 months</strong>, and <strong>1 month</strong> prior to your contract expiration date with a link that shows you new options to renew with the best offers at the time. When your plan ends, you can also simply renew at the same terms &mdash; no sign-up required.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            <strong>NOTE:</strong> If you opt to switch plans, just be sure to set your <strong>new start date</strong> the day after your previous plan's end date. Otherwise, your existing plan is set to renew on that date instead.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default powerkiosk-panel">
+                                <div class="panel-heading" role="tab" id="headingSeven-panel3">
+                                    <h3 class="text-primary-light">
+                                                <u><a class="pkd-header text-white pkd-innerheader" name="suppliers" role="button" data-toggle="collapse" data-parent="#accordion-panel3" href="#collapseSeven-panel3" aria-expanded="true" aria-controls="collapseSeven-panel3">
+                                                    "What happens if I change service addresses?" <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </a></u>
+                                            </h3>
+                                </div>
+                                <div id="collapseSeven-panel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven-panel3">
+                                    <div class="panel-body pkd-body">
+                                        <p class="text-warning-light">
+                                            Moving's a pain &mdash; we hear you. The last thing you want to think about when moving to a new residence or business location is switching service/mailing addresses.
+                                        </p>
+                                        <p class="text-warning-light">
+                                            When changing your address, first contact your supplier to go discuss special offers when you move. If service is not available at your new address, you can come back to PowerKioskDirect.com to shop for the best offers for your new address. You'll then start a completely new contract. For plans with cancellation fees listed, these apply only in "early termination" situations where the service is actively cancelled before the end of a contract term.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" class="container-fluid vpadding-30 bg-primary">
+                <div class="vpadding-30"></div>
+                <div class="main main-padding">
+                    <div class="row">
+                        <div class="col-sm-12 text-center vpadding-20">
+                            <h2 class="text-white">What People Are Saying...</h2>
+                        </div>
+                    </div>
+                    <div class="row quotes-container">
+                        <div class="col-md-4">
+                            <div class="quotes">
+                                <i class="fa fa-quote-left"></i>
+                                <span class="heading text-primary-light pkd-testimonials">
+                                                                        It was unimaginably easy to save 30% on my electricity and natural gas bills. Couldn't get any better.
+                                                                        </span>
+                                <i class="fa fa-quote-right"></i>
+                                <br>
+                                <span class="text-primary-light testimonial-source">
+                                        <strong>~ Manager, Eagle Electronics</strong>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="quotes">
+                                <i class="fa fa-quote-left"></i>
+                                <span class="heading text-primary-light pkd-testimonials">
+                                                                        Power Kiosk is easy to navigate and the rates are much lower than what we used to pay.
+                                                                        </span>
+                                <i class="fa fa-quote-right"></i>
+                                <br>
+                                <span class="text-primary-light testimonial-source">
+                                        <strong>~ D. Kraus, Columbus, OH</strong>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="quotes">
+                                <i class="fa fa-quote-left"></i>
+                                <span class="heading text-primary-light pkd-testimonials">
+                                                                        The process was seamless. I liked it a lot, plus I am saving a lot of money in the long run.
+                                                                        </span>
+                                <i class="fa fa-quote-right"></i>
+                                <br>
+                                <span class="text-primary-light testimonial-source">
+                                        <strong>~ Koorosh, Wedding Bands & Co.</strong>
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vpadding-60"></div>
+                    <div class="row">
+                        <div class="panel-group" style="margin-bottom: 0; margin-top: 20px;">
+                            <div class="panel panel-default powerkiosk-panel" style="padding-bottom: 0">
+                                <div class="panel-heading">
+                                    <h3 class="pkd-header text-white feedback">We want your feedback</h3>
+                                    <p class="pkd-header text-white">
+                                        As an independently owned business, we truly value feedback to help us improve the online experience we provide. <u><a href="mailto:feedback@powerkioskdirect.com" class="share-two">Share your two cents</a></u>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="markets" class="container-fluid vpadding-40 bg-white">
+                <div class="vpadding-30"></div>
+                <div class="main main-padding">
+                    <div class="row">
+                        <div class="col-sm-12 text-center vpadding-20">
+                            <h2>States We Serve</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="panel-group" style="margin-bottom: 0;">
+                            <div class="panel panel-default powerkiosk-panel" style="padding-bottom: 0; margin-top: 0; padding-top: 0;">
+                                <div class="panel-heading">
+                                    <p class="pkd-header text-warning">
+                                        Here are the states Power Kiosk serves that offer electricity and/or natural gas supplier choice. (Interested in becoming a Power Kiosk supplier partner? Visit <u><a target="_blank" href="http://powerkiosk.com">Power Kiosk for Business</a></u>.)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row vpadding-10">
+                        <div class="img-container text-center">
+                            <img src="assets/img/map.jpg" class="map" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="partners" class="container-fluid vpadding-10 bg-gray-dark" itemtype="http://schema.org/Breadcrumb">
+                <div class="vpadding-30"></div>
+                <div class="main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center vpadding-20">
+                                <h2>Utility Partners</h2>
+                            </div>
+                            <div class="text-center vpadding-20">
+                                <input class="form-control" type="text" data-bind="textInput: utilityPartners.filterQuery" placeholder="Find Your Utility" style="width: 300px; margin: 0 auto; text-align: center;">
+                            </div>
+                        </div>
+                        <div class="row vpadding-10 text-center">
+                            <div class="col-md-6">
+                                <!-- ko foreach: utilityPartners.filteredPartners -->
+                                <!-- ko if: $index() < $root.utilityPartners.filteredPartners().length / 2 -->
+                                <div class="logo">
+                                    <a data-bind="attr: {'href': value }, html: name"></a>
+                                </div>
+                                <!-- /ko -->
+                                <!-- /ko -->
+                            </div>
+                            <div class="col-md-6">
+                                <!-- ko foreach: utilityPartners.filteredPartners -->
+                                <!-- ko if: $index() > $root.utilityPartners.filteredPartners().length / 2 -->
+                                <div class="logo">
+                                    <a data-bind="attr: {'href': value }, html: name"></a>
+                                </div>
+                                <!-- /ko -->
+                                <!-- /ko -->
+                            </div>
+                        </div>
+                        <div style="display: none;">
+                            <a href="utility/aep/"></a>
+                            <a href="utility/atlantic_city_electric/"></a>
+                            <a href="utility/centerpoint_houston/"></a>
+                            <a href="utility/comed/"></a>
+                            <a href="utility/coned/"></a>
+                            <a href="utility/meted/"></a>
+                            <a href="utility/duquesne_light/"></a>
+                            <a href="utility/ppl/"></a>
+                            <a href="utility/ohio_edison/"></a>
+                            <a href="utility/peoples_gas/"></a>
+                            <a href="utility/nicor/"></a>
+                            <a href="utility/columbia_gas/"></a>
+                            <a href="utility/elizabethtown_gas/"></a>
+                            <a href="utility/south_jersey_gas/"></a>
+                            <a href="utility/consumers_energy/"></a>
+                            <a href="utility/dte_energy/"></a>
+                            <a href="utility/dominion_east_ohio/"></a>
+                            <a href="utility/peoples_natural_gas/"></a>
+                            <a href="utility/toledo_edison/"></a>
+                            <a href="utility/peco/"></a>
+                            <a href="utility/ameren/"></a>
+                            <a href="utility/ugi/"></a>
+                            <a href="utility/west_penn_power/"></a>
+                            <a href="utility/cleveland_illuminating/"></a>
+                            <a href="utility/duke_energy/"></a>
+                            <a href="utility/penelec/"></a>
+                            <a href="utility/jersey_central_power_and_light/"></a>
+                            <a href="utility/pseg/"></a>
+                            <a href="utility/bge/"></a>
+                            <a href="utility/connecticut_light_and_power/"></a>
+                            <a href="utility/delmarva_power/"></a>
+                            <a href="utility/eversource/"></a>
+                            <a href="utility/keyspan/"></a>
+                            <a href="utility/national_grid/"></a>
+                            <a href="utility/niagara_mohawk/"></a>
+                            <a href="utility/nstar/"></a>
+                            <a href="utility/pepco/"></a>
+                            <a href="utility/potomac_edison/"></a>
+                            <a href="utility/psnh/"></a>
+                            <a href="utility/rge/"></a>
+                            <a href="utility/washington_gas/"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="container-fluid vpadding-20 bg-gray-footer">
+                <div class="vpadding-30"></div>
+                <div class="row main-padding">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 text-center vpadding-10">
+                                <div class="heading all-caps text-white">Helpful Info</div>
+                                <div class="footer-info">
+                                    <a href="#why-switch">Why Switch?</a>
+                                    <a href="#faqs">Rate FAQs</a>
+                                    <a href="#testimonials">Testimonials</a>
+                                    <a href="#markets">States We Serve</a>
+                                    <a href="#partners">Utility Partners</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-md-push-4 text-center">
+                                <div class="heading all-caps text-white">About</div>
+                                <div class="address footer-info">
+                                    <span><a href="//powerkioskdirect.com/privacy-policy">Privacy Policy</a></span>
+                                    <span><a href="http://powerkiosk.com" target="_blank">Energy Broker Site</a></span>
+                                    <span class="sslcerts">
+                                                <img class="rapidssl" src="assets/img/RapidSSL_SEAL-90x50.gif" height="30" />
+                                                <a style="display: inline;" href="https://www.trustedsite.com/site/powerkioskdirect.com/" target="_blank"><img src="assets/img/trustedsite.png" height="30" /></a>
+                                            </span>
+                                    <span class="sslcerts">
+                                                <a href="http://www.bbb.org/chicago/business-reviews/energy-service-companies/power-kiosk-in-chicago-il-88654170/#bbbonlineclick" target="_blank" rel="nofollow"><img src="https://seal-chicago.bbb.org/seals/blue-seal-200-42-whitetxt-bbb-88654170.png" style="border: 0;" alt="Power Kiosk BBB Business Review" /></a>
+                                            </span>
+                                </div>
+                            </div>
+                            <div class="visible-xs col-xs-12 col-md-8 col-md-push-4 text-center">
+                                <div class="socials">
+                                    <a onclick="window.open($(this).attr('href'))" href="https://www.facebook.com/powerkiosk"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="https://www.linkedin.com/company/power-kiosk/"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="https://plus.google.com/101865801844976018304/posts"><i class="fa fa-google-plus-square"></i></a>
+                                    <a href="https://twitter.com/powerkiosk"><i class="fa fa-twitter-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-md-pull-4 vpadding-10">
+                                <div class="row contact text-center">
+                                    <div class="col-xs-12 col-md-12 text-center">
+                                        <img data-bind="attr: { 'src': logo2 }, visible: finishedAgentsInit" style="display: none" class="vpadding-10" />
+                                    </div>
+                                    <div class="col-xs-12 col-md-12 text-center">
+                                        <div class="contact-info text-default" style="float: none;">
+                                            <a class="text-blue-med-light" href="mailto:support@powerkiosk.com?Subject=Info" target="_top">support@powerkiosk.com</a>
+                                            <br/>
+                                            <span>Phone: 855.4.PKIOSK</span>
+                                            <br>
+                                            <span>Fax: 312.273.5180</span>
+                                            <br>
+                                            <span>351 W. Hubbard, Suite 502, Chicago, IL 60654</span>
+                                        </div>
+                                        <div class="hidden-xs socials">
+                                            <a href="https://www.facebook.com/powerkiosk"><i class="fa fa-facebook-square"></i></a>
+                                            <a href="https://www.linkedin.com/company/power-kiosk/"><i class="fa fa-linkedin-square"></i></a>
+                                            <a href="https://plus.google.com/101865801844976018304/posts"><i class="fa fa-google-plus-square"></i></a>
+                                            <a href="https://twitter.com/powerkiosk"><i class="fa fa-twitter-square"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="subFooter" class="container-fluid vpadding-10 bg-gray-dark">
+                <div class="vpadding-10"></div>
+                <div class="text-center">
+                    <span>Copyright &copy; POWERKIOSK <span data-bind="text: (new Date()).getFullYear()"></span> All rights reserved</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="bg-white" style="display: none;" data-bind="fadeVisible: showRates">
+        <nav class="navbar navbar-small bg-primary-light">
+            <div class="navbar-header">
+                <span style="cursor: pointer" class="navbar-brand" data-bind="click: reloadPage">
+				    <img data-bind="attr: {'src': logo }, visible: finishedAgentsInit" style="display: none" />
+				</span>
+                <h5 class="visible-xs navbar-title text-primary">Select Your Plan</h5>
+            </div>
+            <div id="navbar" class="hidden-xs">
+                <h3 class="navbar-title text-primary">Select Your Plan</h3>
+                <div class="pull-right">
+                    <div class="text-primary text-right">
+                        <!-- ko template: 'phoneEmailTemplate' -->
+                        <!-- /ko -->
+                    </div>
+                </div>
+            </div>
+            <div class="visible-xs-block text-primary vpadding-top-5">
+                <!-- ko template: 'phoneEmailTemplate2' -->
+                <!-- /ko -->
+            </div>
+        </nav>
+
+        <div class="container-fluid wrapper rates-wrapper">
+            <div class="row vpadding-5">
+                <div class="sidebar-button pull-left" data-bind="click: function() { ReturnToInputPage(); $(window).trigger('resize'); }">
+                    <span class="btn btn-default btn-hollow icon-only">
+												<i class="fa fa-chevron-left"></i>
+										</span>
+                </div>
+                <div class="col-sm-12">
+                    <div class="alert alert-info nomargin-bottom">
+                        <span><em>Below are the best plans we've found based on the details you entered. NO fee to switch,<span data-bind="visible: isTexas() || isGeorgia() || isNewJersey()" style="display: none">**</span> and no interruption in your service.</em>
+                        </span>
+                        <!-- ko if: isTexas() || isGeorgia() || isNewJersey() -->
+                        <br>
+                        <span><em>**You may be charged a fee if you switch your marketer more than once per year in <span data-bind="text: stateLong"></span>. Please verify with your current utility company to understand any switch fees.</em>
+                        </span>
+                        <!-- /ko -->
+                    </div>
+                    <div class="alert alert-success nomargin-bottom" data-bind="visible: discountTextShow">
+                        <span data-bind="text: discountText"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- ko template: { name: 'navigationTemplate', data: { model: $root, step: 'Select' } } -->
+            <!-- /ko -->
+            <span>In order to view the Terms and Conditions you must have Adobe PDF Reader.  Click <a target="_blank" href="https://get.adobe.com/reader/"><u>here</u></a> to install.</span>
+
+            <!-- START Change Search Tile -->
+            <div class="panel panel-default panel-nopadding vmargin-10">
+                <div class="panel-heading text-center">
+                    <span class="panel-title">View Savings (Optional)</span>
+                </div>
+                <div class="panel-body padding-10">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div id="searchFields">
+                                <div class="row">
+                                    <div data-bind="css: {'col-xs-6': isNotResidential, 'col-xs-12': !isNotResidential()}">
+                                        <div class="form-group vmargin-5" data-bind="css: {'form-select': isChrome}">
+                                            <span class="title">Energy Type</span>
+                                            <select class="form-control text-capitalize" data-bind="options: serviceTypes, optionsText: 'name', optionsValue: 'serviceTypeId', value: serviceTypeId, enable: !gettingData()">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6" data-bind="visible: isNotResidential">
+                                        <span class="title">Start Date</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="In Case you have an existing contract, change the start date to a date after that contract ends." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                        <div class="input-group date vmargin-5" data-bind="dateTimePicker: contractStartDate.effectiveDate, dateTimePickerOptions: { format: 'MM/YYYY', allowInputToggle: true }">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div data-bind="css: {'col-xs-6': isNotResidential() && !isGas(), 'col-xs-12': !isNotResidential() || isGas()}">
+                                        <div class="form-group vmargin-5" data-bind="css: {'form-select': isChrome}">
+                                            <span class="title">Local Utility</span>
+                                            <select class="form-control text-capitalize" data-bind="options: utilities, optionsText: 'name', optionsValue: 'value', value: utilityId, enable: !gettingData()">
+                                            </select>
+                                        </div>
+                                        <small data-bind="visible: customer.sampleBillAttachmentID">View a <u><a class="fancybox" data-fancybox-type="image" data-bind="attr: {'href': customer.sampleBillAttachmentID() }" data-width="700" data-height="600">sample bill</a></u> (No special software or hardware required to view.)</small>
+                                    </div>
+                                    <div class="col-xs-6" data-bind="visible: isNotResidential() && !isGas() && rateClasses().length > 0">
+                                        <div class="form-group vmargin-5" data-bind="css: {'form-select': isChrome}">
+                                            <span class="title">Rate Class</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="attr: { 'data-content': 'Customers are classified using a rate class based on their electricity consumption pattern. Your rate class can be spotted on your utility bill &mdash; see our <a class=\'fancybox\' data-fancybox-type=\'image\' href=\'' + customer.sampleBillAttachmentID() + '\'>sample bill</a> for reference.'}" tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                            <select class="form-control" data-bind="options: rateClasses, optionsText: 'optionDisplay', optionsValue: 'name', value: rateClass">
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div data-bind="css: {'col-xs-12': !zoneShow(), 'col-xs-6': zoneShow}">
+                                        <div class="form-group vmargin-10">
+                                            <span class="title">Zip Code</span>
+                                            <input type="text" class="form-control" data-bind="textInput: zipCode, enable: zipCodeEnabled" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6" data-bind="visible: zoneShow">
+                                        <div class="form-group vmargin-10" data-bind="css: {'form-select': isChrome}">
+                                            <span class="title">Zone</span>
+                                            <select class="form-control" data-bind="options: zones, optionsText: 'name', optionsValue: 'value', value: zoneId">
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div id="usageRates">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="base-rate">
+                                            <span class="title">Past Year's Usage</span><span> (<span data-bind="text: energyUnit"></span>)</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="attr: { 'data-content': 'Please enter the exact usage from your current bill. Estimate your annual energy use by adding up usage over the last 12 months. (Most utilities show you a 12-month snapshot on your monthly bill; they\'ll also provide this information online or over the phone.) See our <a class=\'fancybox\' data-fancybox-type=\'image\' href=\'' + customer.sampleBillAttachmentID() + '\'>sample bill</a> for reference.'}" tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                            <div class="form-group vmargin-5">
+                                                <input type="number" class="form-control text-center" data-bind="textInput: annualUsageSet">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="base-rate vmargin-5">
+                                            <span class="title">Current Rate</span><span> (&cent;/<span data-bind="text: energyUnit"></span>)</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content='Please enter the exact current monthly rate in <strong>cents</strong> from your current bill. You can typically find this on your monthly bill listed under the "Supply" or charges section. [usage] x [rate]. It may appear as a dollar value<br> (0.[rate]).' tabindex="0" data-trigger="focus" data-placement="top" style="cursor: pointer"><i class="fa fa-question-circle"></i></a>
+                                            <div class="form-group">
+                                                <input type="number" class="form-control text-center" data-bind="value: baseRate, attr: { 'placeholder': baseRatePlaceholder }">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12" data-bind="visible: estSavings() > 0">
+                                        <span class="title">Estimated Monthly Savings</span>
+                                        <div class="box text-center">
+                                            <h3 class="text-center inline-block nomargin" data-bind="text: estSavingsDisplayMonthly"></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-hollow btn-lg btn-block" data-bind="click: ReRate, enable: getRatesEnabled">
+                                                <i class="fa fa-refresh"></i>
+                                                <span>RE-QUOTE</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Change Search Tile -->
+
+            <!-- START Advanced Filters Tile -->
+            <div class="panel panel-default panel-accordion vmargin-10">
+                <a href="#collapse-0" class="accordion-toggle collapsed no-deco" data-toggle="collapse" data-parent="#advancedFilters" aria-expanded="false">
+                    <div class="panel-heading text-center">
+                        <span class="panel-title">Advanced Filters</span>
+                        <i class="caret"></i>
+                    </div>
+                </a>
+                <div class="panel-collapse collapse" id="collapse-0" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body padding-20">
+                        <div class="row">
+                            <div class="col-sm-5 vpadding-5">
+                                <span class="title">Suppliers</span>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="text-button" data-bind="click: SelectAllSuppliers">Select All</span>
+                                        <span class="text-button" style="margin-left: 50px" data-bind="click: ResetAllSuppliers">Select None</span>
+                                    </div>
+                                </div>
+                                <div class="row" data-bind="foreach: uniqueSuppliers">
+                                    <div class="col-xs-6">
+                                        <div class="checkbox block">
+                                            <input class="input-sm styled" type="checkbox" data-bind="attr: { 'id': name }, checked: isSelected">
+                                            <label data-bind="attr: { 'for': name } ">
+                                                <span data-bind="text: name"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 vpadding-5">
+                                <span class="title">Contract Length</span>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="text-button" data-bind="click: SelectAllTerms">Select All</span>
+                                        <span class="text-button" style="margin-left: 50px" data-bind="click: ResetAllTerms">Select None</span>
+                                    </div>
+                                </div>
+                                <div class="row" data-bind="foreach: uniqueContracts">
+                                    <div class="col-xs-12">
+                                        <div class="checkbox block">
+                                            <input class="input-sm styled" type="checkbox" data-bind="attr: { 'id': name }, checked: isSelected">
+                                            <label data-bind="attr: { 'for': name } ">
+                                                <span data-bind="text: name"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-10">
+                                        <button class="btn btn-primary btn-hollow btn-lg btn-block vmargin-top-5" data-bind="click: FilterRates">
+                                            <i class="fa fa-filter"></i> APPLY FILTERS
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Advanced Filters Tile -->
+
+            <div class="row" data-bind="visible: !getRatesEnabled()" style="display: none">
+                <div class="col-md-12">
+                    <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true" style="color: #1a2674; font-size: 2em;"></i>
+                </div>
+            </div>
+
+            <!-- START Best Result Tiles -->
+            <div class="row" data-bind="foreach: bestPlans()">
+                <div class="col-sm-4 vpadding-10" data-bind="visible: show">
+                    <div class="card nopadding-x text-center">
+                        <div class="card-box">
+                            <div class="card-box-header">
+                                <p class="heading nomargin-bottom" data-bind="html: headingDisplay"></p>
+                                <span data-bind="text: planName"></span>
+                            </div>
+                        </div>
+                        <div class="card-box card-box-body">
+                            <table width="100%">
+                                <tr>
+                                    <td class="text-right">
+                                        <span data-bind="html: rateDisplayTitle2"></span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="visible: showRateDisplayTitleTooltip, attr: { 'data-content': rateDisplayTitleTooltip }" tabindex="0" data-trigger="hover" data-placement="top" style="cursor: pointer"><i class="fa fa-question-circle"></i></a>
+                                    </td>
+                                    <td width="50%">
+                                        <span class="value big" data-bind="html: rateDisplay"></span>
+                                    </td>
+                                </tr>
+                                <tr data-bind="visible: estSavings > 0">
+                                    <td class="text-right">
+                                        <span>Savings/Month</span>
+                                    </td>
+                                    <td>
+                                        <span class="value" data-bind="text: estSavingsDisplayMonthly"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-box card-box-body">
+                            <div class="corp-logo">
+                                <img data-bind="attr: { 'src': logo }" />
+                                <!-- ko if: puct -->
+                                <div><small>PUCT #</small><small data-bind="text: puct"></small></div>
+                                <!-- /ko -->
+                            </div>
+                        </div>
+                        <div class="card-box card-box-body">
+                            <div class="card-links">
+                                <a href="#" style="cursor: pointer;" data-toggle="modal" data-bind="attr: { 'data-target': '#showPlanDetailModal0' + $index() } ">Details <i class="fa fa-angle-right"></i></a>
+                                <a style="margin-left: 3px;" target="_blank" data-bind="attr: { 'href': disclaimerPath }, visible: disclaimerPath">Disclaimer <i class="fa fa-angle-right"></i></a>
+                                <a style="margin-left: 3px;" target="_blank" data-bind="click: function() { return showTos($index()); }, attr: { 'href': tosPath }, visible: tosPath">Terms &amp; Conditions <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <br>
+                            <form style="display: none" data-bind="attr: { 'id': 'tosForm0' + $index(), 'action': BASE_API_URL + 'tools/renderPDF' }" method="post" target="_blank">
+                                <input type="hidden" name="filePath" data-bind="value: originalTosPath">
+                                <input type="hidden" name="memento" data-bind="value: tosPathMemento">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="form-group signUp">
+                        <p class="text-danger" style="display: none" data-bind="visible: showSignUpWarning, text: signUpWarningText"></p>
+                        <button class="btn btn-primary btn-block" data-bind="click: $root.ChooseSupplier, enable: $root.chooseSupplierEnabled">
+                            <span class="heading text-white">Sign Up</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END Best Result Tiles -->
+
+            <!-- START Result Tiles -->
+            <div class="sort-row clearfix">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <span class="heading">Available Plans <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="attr: { 'data-content': '<strong>Terms</strong><br>Prior to the end of your contract, you\'ll receive an email with renewal options. This ensures you continue to get the best available rate based on your new plan.<br><strong>Green %</strong><br>Approximate percentage of a plan\'s energy supply that comes from renewable resources (ex. - solar, geothermal, wind, hydroelectric).'}" tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="sort-container">
+                            <label class="control-label">Sort</label>
+                            <select class="form-control input-sm" data-bind="value: sortMethod">
+                                <option value="-term">Contract Term: Long to Short</option>
+                                <option value="term">Contract Term: Short to Long</option>
+                                <option value="displayRate" selected>Price</option>
+                                <option value="-savings">Savings</option>
+                                <option value="-popularity">Popularity</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-bind="visible: !getRatesEnabled()" style="display: none">
+                <div class="col-md-12">
+                    <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true" style="color: #1a2674; font-size: 2em;"></i>
+                </div>
+            </div>
+
+            <div style="display: none" data-bind="visible: showRateError">
+                <h3 data-bind="text: rateErrorText"></h3>
+                <button style="display: none;" class="btn btn-primary btn-sm btn-block" data-bind="click: ReturnToCustomerPage, visible: showAuctionButton">
+                    <span class="text-bigger text-white">Register Now</span>
+                </button>
+            </div>
+
+            <!-- ko foreach: rates -->
+            <div class="tile" data-bind="visible: show">
+                <div class="row nomargin">
+                    <div class="col-sm-2 nopadding-x text-center">
+                        <div class="tile-header">
+                            <img data-bind="attr: { 'src': logo }" />
+                            <!-- ko if: puct -->
+                            <div><small>PUCT #</small><small data-bind="text: puct"></small></div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row tile-body">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-12 sub-title">
+                                        <span class="value all-caps" data-bind="text: planName"></span>
+                                        <span class="visible-xs"><br></span>
+                                        <span class="terms-links">
+											<a href="#" style="cursor: pointer;" data-toggle="modal" data-bind="attr: { 'data-target': '#showPlanDetailModal1' + $index() } ">Details <i class="fa fa-angle-right"></i></a>
+											<a style="margin-left: 3px;"target="_blank" data-bind="attr: { 'href': disclaimerPath }, visible: disclaimerPath">Disclaimer <i class="fa fa-angle-right"></i></a>
+											<a style="margin-left: 3px;"target="_blank" data-bind="click: function() { return showTos($index()); }, attr: { 'href': tosPath }, visible: tosPath"><span data-bind="html: tosText"></span> <i class="fa fa-angle-right"></i></a>
+                                        <form style="display: none" data-bind="attr: { 'id': 'tosForm1' + $index(), 'action': BASE_API_URL + 'tools/renderPDF' }" method="post" target="_blank">
+                                            <input type="hidden" name="filePath" data-bind="value: originalTosPath">
+                                            <input type="hidden" name="memento" data-bind="value: tosPathMemento">
+                                        </form>
+                                        </span>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-3 tile-box-container text-center">
+                                                <div class="tile-box round-left round-top-left">
+                                                    <div class="tile-box-cell">
+                                                        <span data-bind="html: rateDisplayTitle3"></span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="visible: showRateDisplayTitleTooltip, attr: { 'data-content': rateDisplayTitleTooltip }" tabindex="0" data-trigger="hover" data-placement="top" style="cursor: pointer"><i class="fa fa-question-circle"></i></a>
+                                                        <br/>
+                                                        <span class="value big" data-bind="html: rateDisplay"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3 tile-box-container text-center" data-bind="visible: estSavings > 0">
+                                                <div class="tile-box round-top-right">
+                                                    <div class="tile-box-cell">
+                                                        <span>Savings/Month</span>
+                                                        <br/>
+                                                        <span class="value" data-bind="text: estSavingsDisplayMonthly"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3 tile-box-container text-center">
+                                                <div class="tile-box round-bottom-left">
+                                                    <div class="tile-box-cell">
+                                                        <span>Term</span>
+                                                        <br/>
+                                                        <span class="value" data-bind="text: termDisplay"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3 tile-box-container text-center">
+                                                <div class="tile-box round-right round-bottom-right">
+                                                    <div class="tile-box-cell">
+                                                        <span>Green</span>
+                                                        <br/>
+                                                        <span class="value"><span data-bind="text: greenPercentageDisplay"></span> <img src="//powerkioskdirect.com/assets/img/green-energy.jpg" /></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 tile-btn text-center">
+                                        <button class="btn btn-primary btn-sm btn-block" data-bind="click: $root.ChooseSupplier, enable: $root.chooseSupplierEnabled">
+                                            <span class="text-bigger text-white">Sign Up</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-danger text-right" style="width: 100%; display: none" data-bind="visible: showSignUpWarning, text: signUpWarningText"></p>
+            <!-- /ko -->
+
+            <!-- END Result Tiles -->
+
+            <!-- START Modals -->
+            <!-- ko template: { name: 'modal-template', foreach: bestPlans() } -->
+            <!-- /ko -->
+            <!-- ko template: { name: 'modal-template', foreach: rates } -->
+            <!-- /ko -->
+            <!-- END Modals -->
+        </div>
+    </div>
+
+    <div class="bg-white" style="display: none;" data-bind="fadeVisible: showCustomerPage">
+        <nav class="navbar navbar-small bg-primary-light">
+            <div class="navbar-header">
+                <span style="cursor: pointer" class="navbar-brand" data-bind="click: reloadPage">
+										<img data-bind="attr: {'src': logo }, visible: finishedAgentsInit" style="display: none" />
+								</span>
+                <h5 class="visible-xs navbar-title text-primary"><i class="fa fa-lock"></i> Enter Account Info</h5>
+            </div>
+            <div id="navbar" class="hidden-xs">
+                <h3 class="navbar-title text-primary"><i class="fa fa-lock"></i> Enter Account Info</h3>
+                <div class="pull-right">
+                    <div class="text-primary text-right">
+                        <!-- ko template: 'phoneEmailTemplate' -->
+                        <!-- /ko -->
+                    </div>
+                </div>
+            </div>
+            <div class="visible-xs-block text-primary vpadding-top-5">
+                <!-- ko template: 'phoneEmailTemplate2' -->
+                <!-- /ko -->
+            </div>
+        </nav>
+
+        <div class="container-fluid wrapper">
+
+            <div class="row vpadding-5">
+                <div class="sidebar-button pull-left" data-bind="click: function() { ReturnToRatesPage(); $(window).trigger('resize'); }">
+                    <span class="btn btn-default btn-hollow icon-only">
+						<i class="fa fa-chevron-left"></i>
+					</span>
+                </div>
+                <div class="col-sm-12">
+                    <div class="alert alert-info nomargin-bottom">
+                        <span><em data-bind="html: accountInformationHeaderText"></em></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ko template: { name: 'navigationTemplate', data: { model: $root, step: 'Enter' } } -->
+            <!-- /ko -->
+
+            <!-- START Info Form -->
+            <div class="row vpadding-10">
+                <div class="col-sm-12">
+                    <div class="heading">Account Information</div>
+                    <small data-bind="visible: isRFQ, text: accountInformationTitleText"></small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <form>
+
+                        <!-- ko if: isTexas -->
+                        <div class="panel-default vpadding-10 vmargin-20">
+                            <div id="authorizedUser">
+                                <span class="title">Authorized User (optional) <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="You may authorize another person to discuss your account on your behalf." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a></span>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Authorized User" data-bind="textInput: customer.authorizedUser" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                        <!-- START Account Address -->
+                        <div class="panel-default vpadding-10 vmargin-20">
+                            <div id="accountAddress">
+                                <!-- ko if: isNotResidential -->
+                                <span class="title required">Business (Legal Entity) Name</span>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Corporation, LLC, Non-profit, etc. name." data-bind="textInput: customer.legalEntityName" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                                <div class="row vpadding-10" data-bind="visible: customer.locations()[0].showAccountNumberFields">
+                                    <div class="col-sm-12">
+                                        <div class="form-group nomargin">
+                                            <span class="title required" data-bind="text: customer.accountNumberLabel"></span>
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: customer.locations()[0].accountNumber" />
+                                            <!-- ko if: customer.aglAccountNumberHelp -->
+                                            <span class="text-danger" data-bind="text: customer.aglAccountNumberHelp"></span><br>
+                                            <!-- /ko -->
+                                            <span data-bind="text: customer.accountNumberHelp"></span>
+                                            <span class="small" data-bind="visible: customer.sampleBillAttachmentID">
+											 <a class="btn-link fancybox" data-fancybox-type="image" data-bind="attr: { 'href': customer.sampleBillAttachmentID() }">View Sample Bill</a> (no special software or hardware required to view)
+										</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ko if: customer.locations()[0].showReferenceNumber -->
+                                <span class="title required">Reference #</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="attr: { 'data-content': 'We need the utility reference number to verify your enrollment with ' + customer.provider().name + '.' }" tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: customer.locations()[0].referenceNumber" />
+                                            <span class="small" data-bind="text: customer.locations()[0].referenceNumberFormatHelp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                                <!-- ko if: customer.locations()[0].showNameKey -->
+                                <span class="title required">Name Key</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="attr: { 'data-content': 'We need the utility name key to verify your enrollment with ' + customer.provider().name + '.' }" tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: customer.locations()[0].nameKey" />
+                                            <span class="small" data-bind="text: customer.locations()[0].nameKeyFormatHelp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                                <!-- ko if: customer.locations()[0].showMeterNumber -->
+                                <span class="title required">Meter #</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-bind="attr: { 'data-content': 'We need the meter number to verify your enrollment with ' + customer.provider().name + '.' }" tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: customer.locations()[0].meterNumber" />
+                                            <span class="small" data-bind="text: customer.locations()[0].meterNumFormatHelp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                                <!-- ko if: customer.finNumberRequired -->
+                                <span class="title required">FIN or EIN #</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="We are obligated to collect this information to verify your business." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Federal Identification Number, Employee Identification Number, or Business Tax ID." data-bind="textInput: customer.finNumber" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="title required">Name</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group vmargin-10">
+                                            <input name="fname" type="text" class="form-control" placeholder="First Name" data-bind="textInput: customer.firstName" autocomplete="given-name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="form-group vmargin-10">
+                                            <input name="mname" type="text" class="form-control" placeholder="Middle" data-bind="textInput: customer.middleName" autocomplete="additional-name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group vmargin-10">
+                                            <input name="lname" type="text" class="form-control" placeholder="Last Name" data-bind="textInput: customer.lastName" autocomplete="family-name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ko if: isNotResidential -->
+                                <span class="title required">Job Title</span>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Title" data-bind="textInput: customer.title" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                                <span class="title required">Address</span>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group vmargin-10">
+                                            <input name="address" type="text" class="form-control" placeholder="Street" data-bind="textInput: customer.locations()[0].address" autocomplete="address-line1" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group vmargin-10">
+                                            <input name="address" type="text" class="form-control" placeholder="Apt/Suite/Unit" data-bind="textInput: customer.locations()[0].address2" autocomplete="address-line2" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title">Zip/City/State</div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" disabled data-bind="value: customer.locations()[0].zipCode" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="form-group vmargin-10" data-bind="css: {'form-select': isChrome}">
+                                            <select class="form-control" data-bind="options: customer.locations()[0].citiesInZipCode, value: customer.locations()[0].city">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" disabled value="Illinois" data-bind="value: customer.locations()[0].stateLong" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Account Address -->
+
+                        <div class="row vpadding-20">
+                            <div class="col-sm-12">
+                                <div class="checkbox block" data-bind="validationOptions: {insertMessages: false}">
+                                    <input id="addressBilling" class="input-sm styled" type="checkbox" data-bind="checked: customer.billingAddressShow">
+                                    <label for="addressBilling">
+                                        <span>Billing Address different from Account Address</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- START Billing Address -->
+                        <div id="billingAddress" class="panel-default vpadding-10 vmargin-20" data-bind="visible: customer.billingAddressShow">
+                            <span class="title required">Billing Address</span>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10">
+                                        <input name="address" type="text" class="form-control" placeholder="Street" data-bind="textInput: customer.billingAddressAddress" autocomplete="billing-address-line1" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10">
+                                        <input name="address" type="text" class="form-control" placeholder="Apt/Suite/Unit" data-bind="textInput: customer.billingAddressAddress2" autocomplete="billing-address-line2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title required">Zip/City/State</div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-group vmargin-10">
+                                        <input type="text" class="form-control" placeholder="Zip Code" data-bind="textInput: customer.billingAddressZipCode, enable: customer.billingAddressZipCodeEnabled" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-7" data-bind="visible: customer.billingAddressShowCityState">
+                                    <div class="form-group vmargin-10" data-bind="css: {'form-select': isChrome}">
+                                        <select class="form-control" data-bind="options: customer.billingAddressCitiesInZipCode, value: customer.billingAddressCity">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3" data-bind="visible: customer.billingAddressShowCityState">
+                                    <div class="form-group vmargin-10">
+                                        <input type="text" class="form-control" disabled data-bind="value: customer.billingAddressStateLong" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Billing Address -->
+                        <div class="panel-default vpadding-10 vmargin-20">
+                            <span class="title required">Phone</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="We need this piece of information so that we can contact you if we have any further questions after the enrollment process has completed." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="right"><i class="fa fa-question-circle"></i></a>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10">
+                                        <input name="phone" type="text" class="form-control" placeholder="(000) 000-0000" data-bind="textInput: customer.phone" autocomplete="tel" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="title required">Mobile</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="This is required so that we can send you a verification text.  Standard texting rates apply." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="right"><i class="fa fa-question-circle"></i></a>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10">
+                                        <input name="mobile" type="text" class="form-control" placeholder="(000) 000-0000" data-bind="textInput: customer.mobile" autocomplete="tel" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="title required">Email</span> <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="This is required so that we can send you a verification email." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="right"><i class="fa fa-question-circle"></i></a>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10">
+                                        <input name="email" type="text" class="form-control" placeholder="name@example.com" data-bind="textInput: customer.email" autocomplete="email" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- START Supplier Information -->
+                        <div class="panel-default nomargin" data-bind="visible: isNotResidential">
+                            <span class="title">Current Supplier</span>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10">
+                                        <label class="label">Upload Last Month's Bill <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="A copy of your last bill is required to complete enrollment, don't worry though, if you don't have it now, we can get it later. (electronic file formats: .pdf, .png, .jpg, .gif). We'll use this to verify the account number and other information you've entered. Yep, a screenshot works as long as it's legible.<br><br><strong>On Your Phone?</strong><br>You can take a photo of your bill and upload it that way. Just ensure the entire width is captured and information is legible." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a></label>
+                                        <div class="input-group" data-bind="validationOptions: {insertMessages: false}">
+                                            <label class="input-group-btn">
+                                                <span class="btn btn-primary">
+																								Browse… <input type="file" style="display: none;" data-bind="fileUpload: customer.locations()[0].lastMonthBillFile" accept="image/jpeg,application/pdf,image/png,image/gif">
+																						</span>
+                                            </label>
+                                            <input type="text" class="form-control" readonly="" data-bind="value: customer.locations()[0].lastMonthBillFileName">
+                                        </div>
+                                        <span class="validationMessage" data-bind="validationMessage: customer.locations()[0].lastMonthBillFileName"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- not sure what to do with this yet..., might have to do some sort of clever ajax request
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group nomargin">
+									<label class="label">Bulk Upload of all account numbers </label>
+									<input type="file" class="form-control" placeholder="Account Numbers" data-bind="fileUpload: customer.bulkAccountNumberFile"/>
+									<span class="small">(.xlsx excluding Location #1)</span>
+									<a data-bind="attr: {'href': sampleUpload}" rel="tooltip" class="block" title="" target="_blank" data-original-title="Click to download sample">View sample</a>
+								</div>
+							</div>
+						</div>
+												-->
+                        </div>
+                        <!-- ko if: customer.isTexas -->
+                        <div class="panel-default nomargin">
+                            <span class="title required">Language</span>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10" data-bind="css: {'form-select': isChrome}">
+                                        <select class="form-control" data-bind="value: customer.language">
+                                            <option value="english">English</option>
+                                            <option value="spanish">Spanish</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                        <div class="panel-default nomargin" data-bind="fadeVisible: customer.isTexas() && !customer.isNotResidential()" style="display: none">
+                            <span class="title required">Dwelling Type</span>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group vmargin-10" data-bind="css: {'form-select': isChrome}">
+                                        <select class="form-control" data-bind="optionsCaption: 'Select Dwelling Type...', options: customer.dwellingTypes, value: customer.dwellingType">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4" data-bind="visible: isNotResidential">
+                                <div class="form-group vmargin-10">
+                                    <label class="label">&nbsp;</label>
+                                    <div class="checkbox block" data-bind="validationOptions: {insertMessages: false}">
+                                        <input id="multipleAccounts" class="input-sm styled" type="checkbox" data-bind="checked: customer.hasMultipleAccountNums">
+                                        <label for="multipleAccounts">
+                                            <span><strong>Do you have multiple account numbers?</strong></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="locations" style="display: none;" data-bind="visible: customer.hasMultipleAccountNums">
+                <!-- ko foreach: customer.locations -->
+                <div class="vmargin-30">
+                    <div class="heading">Location <span data-bind="text: ($index() + 1)"></span>
+                        <div class="delete pull-right" data-bind="visible: $root.customer.locations().length > 1, click: $root.customer.RemoveLocation">
+                            <span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+							</span>
+                        </div>
+                    </div>
+                    <div class="panel-default">
+                        <span class="title required">Address</span>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group vmargin-10">
+                                    <input type="text" class="form-control" placeholder="Street" data-bind="textInput: address" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group vmargin-10">
+                                    <input type="text" class="form-control" placeholder="Apt/Suite/Unit" data-bind="textInput: address2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">Zip/City/State</div>
+                        <div class="row vpadding-10">
+                            <div class="col-sm-2">
+                                <div class="form-group vmargin-10">
+                                    <input type="text" class="form-control" disabled data-bind="value: zipCode" />
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="form-group vmargin-10">
+                                    <select class="form-control" data-bind="options: citiesInZipCode, value: city">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group vmargin-10">
+                                    <input type="text" class="form-control" disabled data-bind="value: stateLong" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">Account Information</div>
+                        <div class="row">
+                            <div class="col-sm-6" data-bind="visible: showAccountNumberFields">
+                                <div class="form-group nomargin">
+                                    <label class="label required" data-bind="text: $root.customer.accountNumberLabel"></label>
+                                    <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: accountNumber" />
+                                    <span class="small" data-bind="text: $root.customer.accountNumberHelp"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group nomargin">
+                                    <label class="label">Last Month's Bill</label>
+                                    <div class="input-group">
+                                        <label class="input-group-btn" data-bind="validationOptions: {insertMessages: false}">
+                                            <span class="btn btn-primary">
+																								Browse… <input type="file" style="display: none;" data-bind="fileUpload: lastMonthBillFile">
+																						</span>
+                                        </label>
+                                        <input type="text" class="form-control" readonly="" data-bind="value: lastMonthBillFileName">
+                                    </div>
+                                    <span class="validationMessage" data-bind="validationMessage: lastMonthBillFileName"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ko if: showReferenceNumber -->
+                            <div class="col-sm-3">
+                                <span class="title required">Reference #</span>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: referenceNumber" />
+                                            <span class="small" data-bind="text: referenceNumberFormatHelp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /ko -->
+                            <!-- ko if: showNameKey -->
+                            <div class="col-sm-3">
+                                <span class="title required">Name Key</span>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: nameKey" />
+                                            <span class="small" data-bind="text: nameKeyFormatHelp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /ko -->
+                            <!-- ko if: showMeterNumber -->
+                            <div class="col-sm-3">
+                                <span class="title required">Meter #</span>
+                                <div class="row vpadding-10">
+                                    <div class="col-sm-12">
+                                        <div class="form-group vmargin-10">
+                                            <input type="text" class="form-control" placeholder="Found on your utility bill." data-bind="textInput: meterNumber" />
+                                            <span class="small" data-bind="text: meterNumFormatHelp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /ko -->
+                <!-- Add Location Button -->
+                <div class="row vpadding-20">
+                    <div class="col-sm-12">
+                        <button class="add-location btn btn-primary btn-hollow" data-bind="click: customer.AddLocation">Add Location</button>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+            <div class="vpadding-top-20 vpadding-20">
+                <div class="row">
+                    <div class="alert-wrapper">
+                        <div class="alert alert-danger" data-bind="visible: customerErrorShow, html: customerErrorText"></div>
+                    </div>
+                </div>
+                <div class="row hidden-xs">
+                    <div class="col-xs-12">
+                        <span onclick="SetupLightBox();">
+														<button class="btn btn-primary btn-lg" data-bind="click: CustomerSubmit, text: customerSubmitText, enable: customerSubmitEnabled">Submit</button>
+												</span>
+                    </div>
+                </div>
+                <div class="row visible-xs">
+                    <div class="col-xs-12">
+                        <span onclick="SetupLightBox();">
+														<button class="btn btn-primary btn-block btn-lg" data-bind="click: CustomerSubmit, text: customerSubmitText, enable: customerSubmitEnabled">Submit</button>
+												</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END Info Form -->
+
+        </div>
+    </div>
+
+    <div class="bg-white" style="display: none;" data-bind="fadeVisible: showVerifyPage">
+        <nav class="navbar navbar-small bg-primary-light">
+            <div class="navbar-header">
+                <span style="cursor: pointer" class="navbar-brand" data-bind="click: reloadPage">
+										<img data-bind="attr: {'src': logo }, visible: finishedAgentsInit" style="display: none" />
+								</span>
+                <h5 class="visible-xs navbar-title text-primary"><i class="fa fa-lock"></i> Verify Information</h5>
+            </div>
+            <div id="navbar" class="hidden-xs">
+                <h3 class="navbar-title text-primary"><i class="fa fa-lock"></i> Verify Information!</h3>
+                <div class="pull-right">
+                    <div class="text-primary text-right">
+                        <!-- ko template: 'phoneEmailTemplate' -->
+                        <!-- /ko -->
+                    </div>
+                </div>
+            </div>
+            <div class="visible-xs-block text-primary vpadding-top-5">
+                <!-- ko template: 'phoneEmailTemplate2' -->
+                <!-- /ko -->
+            </div>
+        </nav>
+
+        <div class="container-fluid wrapper">
+            <div class="row vpadding-5">
+                <div class="sidebar-button pull-left" data-bind="click: function() { ReturnToCustomerPage(); $(window).trigger('resize'); }">
+                    <span class="btn btn-default btn-hollow icon-only">
+						<i class="fa fa-chevron-left"></i>
+					</span>
+                </div>
+                <div class="col-sm-12">
+                    <div class="alert alert-info nomargin-bottom">
+                        <span><em>Does everything below look correct to you? If not, no worries &mdash; the information you've entered is saved in the previous step.</em></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ko template: { name: 'navigationTemplate', data: { model: $root, step: 'Verify' } } -->
+            <!-- /ko -->
+
+            <!-- START Info Form -->
+            <div class="row vpadding-10">
+                <div class="col-sm-12">
+                    <!-- ko ifnot: $root.isRFQ -->
+                    <div class="heading">Contract for <span data-bind="text: (isGas() ? 'Gas' : 'Electricity')"></span> Service</div>
+                    <br> (You will be notified by email with instructions on how to view your contract online after enrollment)
+                    <div class="panel-default vpadding-10 vmargin-20">
+                        <div class="row">
+                            <!-- ko if: $root.isNotResidential -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Effective Date</span>
+                                <div class="big-value" data-bind="text: contractStartDate.effectiveDateDisplay"></div>
+                            </div>
+                            <!-- /ko -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Term <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="Prior to the end of your contract, you'll receive an email with renewal options. This ensures you continue to get the best available rate based on your new plan." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a></span>
+                                <div class="big-value" data-bind="text: customer.supplier().termDisplay"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Supplier</span>
+                                <div class="big-value" data-bind="text: customer.supplier().supplierName"></div>
+                            </div>
+                            <!-- ko if: !$root.isNotResidential() -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Utility</span>
+                                <div class="big-value text-capitalize" data-bind="text: utilityName"></div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <div class="row">
+                            <!-- ko if: $root.isNotResidential -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Utility</span>
+                                <div class="big-value text-capitalize" data-bind="text: utilityName"></div>
+                            </div>
+                            <!-- /ko -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Projected Yearly Spending (Est.) <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="Based on information you provided, <strong>Project Yearly Spending</strong> is a rough estimate of what you'll spend on energy supply over the next 12 months. This is for reference; it does not affect your rate. We assume a default (business or residential average) if you don't enter current usage or rate information." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="top"><i class="fa fa-question-circle"></i></a></span>
+                                <div class="big-value" data-bind="text: estAnnualSpend"></div>
+                            </div>
+                            <!-- ko if: !$root.isNotResidential() -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Rate</span>
+                                <div class="big-value"><span data-bind="html: customer.supplier().rateDisplay"></span>/<span data-bind="text: customer.supplier().energyUnit"></span></div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <div class="row">
+                            <!-- ko if: $root.isNotResidential -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Rate</span>
+                                <div class="big-value"><span data-bind="html: customer.supplier().rateDisplay"></span>/<span data-bind="text: customer.supplier().energyUnit"></span></div>
+                            </div>
+                            <!-- /ko -->
+                            <!-- ko if: estSavings > 0 -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Your Savings (Est.)</span>
+                                <div class="big-value"><span data-bind="text: estSavingsDisplayMonthly"></span>/month</div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                    <!-- /ko -->
+
+                    <!-- START Customer Info -->
+                    <div class="heading">Customer Information</div>
+                    <div class="panel-default vpadding-10 vmargin-20">
+                        <div class="row">
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Contact</span>
+                                <div class="big-value" data-bind="text: customer.fullName"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Phone</span>
+                                <div class="big-value" data-bind="text: customer.phone"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Mobile</span>
+                                <div class="big-value" data-bind="text: customer.mobile"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 vpadding-5">
+                                <span class="title">Email</span>
+                                <div class="big-value" data-bind="text: customer.email"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Customer Info -->
+
+                    <!-- START Billing Info -->
+                    <div class="heading">Billing Information</div>
+                    <div class="panel-default vpadding-10 vmargin-20">
+                        <div class="row">
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Address</span>
+                                <div class="big-value" data-bind="text: (customer.billingAddressShow() ? customer.billingAddressAddress() : customer.locations()[0].address())"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Apt/Suite/Unit</span>
+                                <div class="big-value" data-bind="text: (customer.billingAddressShow() ? customer.billingAddressAddress2() : customer.locations()[0].address2())"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">City/State/Zip Code</span>
+                                <div class="big-value"><span data-bind="text: (customer.billingAddressShow() ? customer.billingAddressCity() : customer.locations()[0].city())"></span>, <span data-bind="text: (customer.billingAddressShow() ? customer.billingAddressStateLong() : customer.locations()[0].stateLong())"></span> <span data-bind="text: (customer.billingAddressShow() ? customer.billingAddressZipCode() : customer.locations()[0].zipCode())"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Billing Info -->
+
+                    <!-- START Location Info -->
+                    <!-- ko foreach: customer.locations -->
+                    <div class="heading">Service Address (<span data-bind="text: ($index() + 1)"></span>)</div>
+                    <div class="panel-default vpadding-10 vmargin-20">
+                        <div class="row">
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Address</span>
+                                <div class="big-value" data-bind="text: address"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Apt/Suite/Unit</span>
+                                <div class="big-value" data-bind="text: address2"></div>
+                            </div>
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">City/State/Zip Code</span>
+                                <div class="big-value"><span data-bind="text: city"></span>, <span data-bind="text: stateLong"></span> <span data-bind="text: zipCode"></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title" data-bind="text: accountNumberLabel"></span>
+                                <div class="big-value" data-bind="text: accountNumber"></div>
+                            </div>
+                            <!-- ko if: showNameKey -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Name Key</span>
+                                <div class="big-value" data-bind="text: nameKey"></div>
+                            </div>
+                            <!-- /ko -->
+                            <!-- ko if: showReferenceNumber -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Reference #</span>
+                                <div class="big-value" data-bind="text: referenceNumber"></div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <div class="row">
+                            <!-- ko if: showMeterNumber -->
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">Meter #</span>
+                                <div class="big-value" data-bind="text: meterNumber"></div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <!-- ko with: $root.verification -->
+                        <div data-bind="visible: showTaxExemptReasons">
+                            <div class="form-group vmargin-5" data-bind="css: {'form-select': $root.isChrome}">
+                                <span class="title">Reason for Switch</span>
+                                <select class="form-control required" data-bind="options: taxExemptReasons, optionsText: 'name', optionsValue: 'value', value: taxExemptReason">
+                                </select>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko if: customer.finNumberRequired -->
+                    <div class="panel-default vpadding-10 vmargin-20">
+                        <div class="row">
+                            <div class="col-sm-4 vpadding-5">
+                                <span class="title">FIN or EIN #</span>
+                                <div class="big-value" data-bind="text: customer.finNumber"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /ko -->
+                    <!-- END Location Info -->
+
+                    <!-- ko if: verification.showDOB() || verification.showSSN() -->
+                    <div class="heading">Credit Information</div>
+                    <div class="panel-default vpadding-10 vmargin-20">
+                        <div class="row vpadding-10" data-bind="visible: verification.showSSN()">
+                            <label class="col-md-2 control-label" for="customer_SSN">SSN: </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control required" placeholder="555-55-5555" maxlength="11" data-bind="textInput: verification.ssn" pattern="\d{3}-?\d{2}-?\d{4}">
+                            </div>
+                        </div>
+                        <div class="row" data-bind="visible: verification.showDOB()">
+                            <label class="col-md-2 control-label" for="customer_dateofBirthMonth">Date of Birth</label>
+                            <div class="col-md-3">
+                                <select class="form-control required" data-bind="options: months, optionsText: 'name', optionsValue: 'value', value: verification.dob.month">
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-control required" data-bind="options: verification.verificationDaysOfMonth, optionsText: 'name', optionsValue: 'value', value: verification.dob.day">
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-control required" data-bind="options: verification.verificationYears, optionsText: 'name', optionsValue: 'value', value: verification.dob.year">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /ko -->
+                    <i class="fa fa-spinner fa-2x fa-spin" data-bind="visible: verification.loadingSwitchOptions"></i>
+                    <div class="panel-default nomargin" data-bind="fadeVisible: verification.switchOptions() && verification.switchOptions().length > 1" style="display: none">
+                        <span class="title required">Select a Switch Type:</span>
+                        <a href="#" onclick="return false;" role="button" class="btn tooltip-popover" rel="popover" data-content="Not sure?  Select the one that most fits your situation and we'll take care of the rest." tabindex="0" data-trigger="focus" style="cursor: pointer" data-placement="right"><i class="fa fa-question-circle"></i></a>
+                        <!-- ko foreach: verification.switchOptions -->
+                        <div class="row">
+                            <div class="col-md-10 vpadding-5">
+                                <div class="radio" data-bind="validationOptions: {insertMessages: false}">
+                                    <input type="radio" name="switchOption" class="required" data-bind="checked: $root.verification.switchOption, value: $data, attr: { 'id': 'switchOptionRadio' + $index }">
+                                    <label data-bind="attr: { 'for': 'switchOptionRadio' + $index }">
+                                        <span data-bind="text: switchDescription"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                        <label class="small vpadding-5" data-bind="visible: verification.switchOptionBusinessTextShow, text: verification.switchOptionBusinessText"></label>
+                        <div class="row" data-bind="visible: verification.showMoveInType" style="display: none">
+                            <div class="col-md-5">
+                                <span class="title required">Move-In Type</span>
+                                <div class="form-group vmargin-10 inner-select" data-bind="css: {'form-select': isChrome}">
+                                    <select class="form-control" data-bind="optionsCaption: 'Select Move-In Type...', options: verification.moveInTypes, value: verification.moveInType">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ko if: verification.showContractStartDate() && verification.switchOption() -->
+                        <div class="row">
+                            <div class="col-md-5">
+                                <span class="title required">When are you planning your switch/move?</span>
+                                <div class="input-group date vmargin-5" data-bind="dateTimePicker: verification.contractStartDate.switchDate, dateTimePickerOptions: { enabledDates: verification.enabledDates(), format: 'MM/DD/YYYY', allowInputToggle: true }">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                    </div>
+                </div>
+                <i class="fa fa-spinner fa-2x fa-spin" data-bind="visible: verification.loadingAcknowledgements"></i>
+                <!-- ko if: verification.loa -->
+                <div class="col-sm-12" data-bind="visible: verification.loa().show">
+                    <div class="heading" data-bind="html: verification.loa().heading"></div>
+                    <p data-bind="html: verification.loa().body"></p>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label class="label">Name</label>
+                                <input type="text" class="form-control" data-bind="textInput: verification.loa().name">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label class="label">Phone Number</label>
+                                <input type="text" class="form-control" data-bind="textInput: verification.loa().phone">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label class="label">Date Signed</label>
+                                <div class="input-group date vmargin-5" data-bind="dateTimePicker: verification.loa().signedDate, dateTimePickerOptions: { format: 'MM/DD/YYYY', allowInputToggle: true, defaultDate: new Date() }">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /ko -->
+            </div>
+            <div class="row vpadding-10" style="display: none" data-bind="visible: verification.disclaimerErrorMessage">
+                <div class="alert alert-warning" data-bind="text: verification.disclaimerErrorMessage"></div>
+            </div>
+            <div class="row vpadding-10">
+                <div class="col-sm-12">
+                    <div class="heading" data-bind="visible: verification.cds().show, html: verification.cds().heading" style="display: none"></div>
+                    <span data-bind="html: verification.cds().body"></span>
+                    <div class="row vpadding-20" style="margin-top: 8px; display: none;" data-bind="visible: verification.cds().acknowledgements().length > 0">
+                        <div class="col-sm-12">
+                            <!-- ko foreach: verification.cds().acknowledgements -->
+                            <div class="checkbox block">
+                                <input type="checkbox" class="input-sm styled" data-bind="checked: acknowledged, attr: {'id': 'cdsAck' + $index()}">
+                                <label data-bind="attr: {'for': 'cdsAck' + $index()}, html: info"></label>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                    <div class="heading" data-bind="text: verification.termsAndConditionsHeading"></div>
+                    <small data-bind="html: verification.termsAndConditionsBody"></small>
+                    <div class="row vpadding-20" style="margin-top: 8px;" data-bind="visible: verification.acknowledgements().length > 0">
+                        <div class="col-sm-12">
+                            <!-- ko foreach: verification.acknowledgements -->
+                            <!-- ko if: consumerBillOfRights -->
+                            <span data-bind="html: consumerBillOfRights"></span>
+                            <!-- /ko -->
+                            <!-- ko if: termsOfServiceTop -->
+                            <hr />
+                            <span data-bind="html: termsOfServiceTop"></span>
+                            <!-- /ko -->
+                            <div class="checkbox block">
+                                <input type="checkbox" class="input-sm styled" data-bind="checked: acknowledged, attr: {'id': 'ack' + $index()}">
+                                <label data-bind="attr: {'for': 'ack' + $index()}, html: info"></label>
+                            </div>
+                            <!-- ko if: acknowledgedMessage && acknowledged() -->
+                            <div class="alert alert-success" data-bind="html: acknowledgedMessage"></div>
+                            <!-- /ko -->
+                            <!-- ko if: unacknowledgedMessage && acknowledged() -->
+                            <div class="alert alert-danger" data-bind="html: unacknowledgedMessage"></div>
+                            <!-- /ko -->
+                            <!-- ko if: termsOfServiceBottom -->
+                            <span data-bind="html: termsOfServiceBottom"></span>
+                            <!-- /ko -->
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                    <div class="heading" data-bind="visible: verification.specialNotice().show, text: verification.specialNotice().heading" style="display: none;"></div>
+                    <div class="row vpadding-20" style="margin-top: 8px; display: none;" data-bind="visible: verification.specialNotice().acknowledgements().length > 0">
+                        <div class="col-sm-12">
+                            <!-- ko foreach: verification.specialNotice().acknowledgements -->
+                            <div class="checkbox block">
+                                <input type="checkbox" class="input-sm styled" data-bind="checked: acknowledged, attr: {'id': 'specialNoticeAck' + $index()}">
+                                <label data-bind="attr: {'for': 'specialNoticeAck' + $index()}, html: info"></label>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form style="display: none" id="verificationTos" data-bind="attr: { 'action': BASE_API_URL + 'tools/renderPDF' }" method="post" target="_blank">
+                <input type="hidden" name="filePath" data-bind="value: customer.supplier().originalTosPath">
+                <input type="hidden" name="memento" data-bind="value: customer.supplier().tosPathMemento">
+            </form>
+
+            <div class="vpadding-top-20 vpadding-20">
+                <div class="row">
+                    <div class="alert-wrapper">
+                        <div class="alert alert-danger" data-bind="visible: verificationErrorShow, text: verificationErrorText"></div>
+                    </div>
+                </div>
+                <div class="row hidden-xs">
+                    <div class="col-xs-12">
+                        <button class="btn btn-primary btn-hollow btn-lg" data-bind="click: EnrollCustomer, text: enrollCustomerButtonText, enable: enrollCustomerButtonEnabled">Submit</button>
+                    </div>
+                </div>
+                <div class="row visible-xs">
+                    <div class="col-xs-12">
+                        <button class="btn btn-primary btn-block btn-lg" data-bind="click: EnrollCustomer, text: enrollCustomerButtonText, enable: enrollCustomerButtonEnabled">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white" style="display: none;" data-bind="fadeVisible: showConfirmationPage">
+        <nav class="navbar navbar-small bg-primary-light">
+            <div class="navbar-header">
+                <span style="cursor: pointer" class="navbar-brand" data-bind="click: reloadPage">
+									<img data-bind="attr: {'src': logo }, visible: finishedAgentsInit" style="display: none" />
+								</span>
+                <h5 style="font-size: 15px;" class="visible-xs navbar-title text-primary" data-bind="html: confirmationTitle"></h5>
+            </div>
+            <div id="navbar" class="hidden-xs">
+                <h3 class="navbar-title text-primary" data-bind="html: confirmationTitle"></h3>
+                <div class="pull-right">
+                    <div class="text-primary text-right">
+                        <!-- ko template: 'phoneEmailTemplate' -->
+                        <!-- /ko -->
+                    </div>
+                </div>
+            </div>
+            <div class="visible-xs-block text-primary vpadding-top-5">
+                <!-- ko template: 'phoneEmailTemplate2' -->
+                <!-- /ko -->
+            </div>
+        </nav>
+
+        <div class="container-fluid wrapper">
+
+            <!-- ko template: { name: 'navigationTemplate', data: { model: $root, step: 'Done' } } -->
+            <!-- /ko -->
+
+            <!-- START Confirmation Form -->
+            <div class="row vpadding-10">
+                <div class="col-sm-12">
+                    <div class="heading" data-bind="html: thankYouText"></div>
+                    <div class="heading" data-bind="html: enrollmentTimestampText"></div>
+                    <div class="heading" data-bind="html: enrollmentConfirmationNumber"></div>
+                    <p data-bind="visible: !rejectMessage(), html: confirmationMessage2"></p>
+                    <p data-bind="visible: !rejectMessage(), text: browseAwayMessage"></p>
+                    <p data-bind="text: rejectMessage"></p>
+                    <p data-bind="text: creditCheckMessage"></p>
+
+                    <br>
+                    <div class="heading" data-bind="visible: affiliateAgentButtonVisible">Share with friends and Earn Cash By Becoming an Affiliate!</div>
+                    <p data-bind="visible: affiliateAgentButtonVisible, html: sharingMessage"></p>
+                    <div class="addthis_inline_share_toolbox" data-bind="visible: affiliateAgentButtonVisible"></div>
+                </div>
+            </div>
+            <div class="row vpadding-10">
+                <div class="col-sm-12">
+                    <div class="row hidden-xs">
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary btn-lg" data-bind="click: SetupAffiliateAgent, text: affiliateAgentText, visible: affiliateAgentButtonVisible">Sign Me Up!</button>
+                            <button class="btn btn-default btn-lg" data-bind="click: reloadPage">Start Over</button>
+                            <p data-bind="html: affiliateConfirmationSuccessText, visible: affiliateConfirmationSuccessShow"></p>
+                            <p data-bind="html: affiliateConfirmationErrorText, visible: affiliateConfirmationErrorShow"></p>
+                        </div>
+                    </div>
+                    <div class="row visible-xs">
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary btn-block btn-lg" data-bind="click: SetupAffiliateAgent, text: affiliateAgentText, visible: affiliateAgentButtonVisible">Sign Me Up!</button>
+                            <button class="btn btn-default btn-block btn-lg" data-bind="click: reloadPage">Start Over</button>
+                            <div class="alert alert-success" data-bind="visible: affiliateConfirmationSuccessShow">
+                                <p data-bind="html: affiliateConfirmationSuccessText"></p>
+                            </div>
+                            <div class="alert alert-danger" data-bind="visible: affiliateConfirmationErrorShow">
+                                <p data-bind="html: affiliateConfirmationErrorText"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:void();" class="scrollup" style="display: block;">
+        <img src="//powerkioskdirect.com/assets/img/chevron-up.png">
+    </a>
+
+    <section class="subFooter_inflow" style="display: none;" data-bind="fadeVisible: !showInputPage()">
+        <div class="vpadding-5"></div>
+        <div class="pull-right">
+            <div class="seal-crop inflow-footer-item"><img src="//seal-chicago.bbb.org/seals/black-seal-200-42-bbb-88654170.png" style="border: 0;" alt="Power Kiosk BBB Business Review" height="25" /></div>
+        </div>
+        <div class="pull-left">
+            <span class="inflow-footer-item" style="margin-top: 10px; margin-left: 25px;"><u><a href="mailto:feedback@powerkioskdirect.com">Feedback?</a></u></span>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sales Code Modal -->
+    <div id="promoCodeModal" class="modal fade" role="dialog" style="z-index: 100000000">
+        <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Enter Sales Code</h4>
+                </div>
+                <div class="modal-body">
+                    <input class="promoCode form-control text-center" type="text" data-bind="textInput: promoCodeInput" />
+                    <p class="small">Don't have one? You can get one by calling us at 855-4-PKIOSK.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bind="click: ChangeAgentId" onclick="ModalChangeAgentId()">Apply</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phone & Email Template -->
+    <script id="phoneEmailTemplate" type="text/html">
+        <span class="clearfix"><i class="fa fa-phone"></i> <a data-bind="text: agent.phoneNumber, attr: { 'href': 'tel:' + agent.phoneNumberTel() }"></a></span>
+        <i class="fa fa-envelope"></i>
+        <a class="text-primary" data-bind="text: agent.email(), attr: { 'href': 'mailto:' + agent.email() + '?Subject=Info' }" target="_top"></a>
+    </script>
+    <script id="phoneEmailTemplate2" type="text/html">
+        <span class="pull-left"><i class="fa fa-phone"></i> <a style="font-size: 0.750rem !important;" data-bind="text: agent.phoneNumber, attr: { 'href': 'tel:' + agent.phoneNumberTel() }"></a></span>
+        <span class="pull-right"><i class="fa fa-envelope"></i> <a style="font-size: 0.750rem !important;" class="text-primary" data-bind="text: agent.email(), attr: { 'href': 'mailto:' + agent.email() + '?Subject=Info' }" target="_top"></a></span>
+    </script>
+    <!-- Modal Template -->
+    <script id="modal-template" type="text/html">
+        <div data-bind="attr: { 'id': 'showPlanDetailModal' + templateIndex() + $index() } " class="modal fade" tabindex="-1" role="dialog" aria-labelledby="showPlanDetailHeader" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" data-bind="text: planName"></h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3 text-center">
+                                <img class="img-responsive" data-bind="attr: { 'src': logo }">
+                                <!-- ko if: puct -->
+                                <small>PUCT #</small><small data-bind="text: puct"></small>
+                                <!-- /ko -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 hidden-xs">
+                                <dl class="dl-horizontal">
+                                    <dt data-bind="html: rateDisplayTitle"></dt>
+                                    <dd data-bind="html: rateDisplay"></dd>
+                                    <br>
+                                    <!-- ko if: estSavings > 0 -->
+                                    <dt>Est. Savings/Month</dt>
+                                    <dd data-bind="text: estSavingsDisplayMonthly"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: $root.isTexas -->
+                                    <dt>Usage</dt>
+                                    <dd data-bind="html: bandwidthTextHtml"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: $root.isGeorgia -->
+                                    <dt>Delivery</dt>
+                                    <dd data-bind="html: deliveryText"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: greenPercentage > 0 -->
+                                    <dt>Green Energy</dt>
+                                    <dd><span data-bind="text: greenPercentageDisplay"></span> <img src="//powerkioskdirect.com/assets/img/GreenEnergy.jpg" style="width:25px;" title="Green Energy"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: supplierNote -->
+                                    <dt>Please Note</dt>
+                                    <dd><span data-bind="text: supplierNote"></span></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: showDepositDisclaimer -->
+                                    <dt>Requirements</dt>
+                                    <dd><span data-bind="text: depositDisclaimerNote"></span></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                </dl>
+                            </div>
+                            <div class="col-sm-6 hidden-xs">
+                                <dl class="dl-horizontal">
+                                    <dt>Term (Duration)</dt>
+                                    <dd data-bind="text: termDisplay"></dd>
+                                    <br>
+                                    <!-- ko if: billingMethod -->
+                                    <dt>Billing Method</dt>
+                                    <dd data-bind="text: billingMethod"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: isPrepaid -->
+                                    <dt>Is Prepaid</dt>
+                                    <dd data-bind="text: isPrepaidDisplay"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: monthlyServiceFee > 0 -->
+                                    <dt>Monthly Service Fee</dt>
+                                    <dd data-bind="text: monthlyServiceFeeDisplay"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: dailyServiceFee && dailyServiceFee != '$0.00' -->
+                                    <dt>Daily Service Fee</dt>
+                                    <dd data-bind="text: dailyServiceFee"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: cancellationFee && cancellationFee != '$0.00' -->
+                                    <dt>Cancellation Fee</dt>
+                                    <dd data-bind="text: cancellationFee"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: salesTax > 0 -->
+                                    <dt>Sales Tax</dt>
+                                    <dd data-bind="text: salesTaxDisplay"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: !isJustEnergy -->
+                                    <dt>Renewal</dt>
+                                    <dd>You'll get an email reminder 30 days before the plan's end date with renewal options, so you can continue to get the best available rate on the market.</dd>
+                                    <br>
+                                    <!-- /ko -->
+                                </dl>
+                            </div>
+                            <div class="col-xs-12 visible-xs">
+                                <dl class="dl-horizontal">
+                                    <dt data-bind="html: rateDisplayTitle"></dt>
+                                    <dd data-bind="html: rateDisplay"></dd>
+                                    <br>
+                                    <!-- ko if: estSavings > 0 -->
+                                    <dt>Est. Savings/Month</dt>
+                                    <dd data-bind="text: estSavingsDisplayMonthly"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: $root.isTexas -->
+                                    <dt>Usage</dt>
+                                    <dd data-bind="html: bandwidthTextHtml"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko ifnot: $root.isGeorgia -->
+                                    <dt>Delivery</dt>
+                                    <dd data-bind="html: deliveryText"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: greenPercentage > 0 -->
+                                    <dt>Green Energy</dt>
+                                    <dd><span data-bind="text: greenPercentageDisplay"></span> <img src="//powerkioskdirect.com/assets/img/GreenEnergy.jpg" style="width:25px;" title="Green Energy"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <dt>Term (Duration)</dt>
+                                    <dd data-bind="text: termDisplay"></dd>
+                                    <br>
+                                    <!-- ko if: billingMethod -->
+                                    <dt>Billing Method</dt>
+                                    <dd data-bind="text: billingMethod"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: isPrepaid -->
+                                    <dt>Is Prepaid</dt>
+                                    <dd data-bind="text: isPrepaidDisplay"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: monthlyServiceFee > 0 -->
+                                    <dt>Monthly Service Fee</dt>
+                                    <dd data-bind="text: monthlyServiceFeeDisplay"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: dailyServiceFee && dailyServiceFee != '$0.00' -->
+                                    <dt>Daily Service Fee</dt>
+                                    <dd data-bind="text: dailyServiceFee"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: cancellationFee && cancellationFee != '$0.00' -->
+                                    <dt>Cancellation Fee</dt>
+                                    <dd data-bind="text: cancellationFee"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: salesTax > 0 -->
+                                    <dt>Sales Tax</dt>
+                                    <dd data-bind="text: salesTaxDisplay"></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: !isJustEnergy -->
+                                    <dt>Renewal</dt>
+                                    <dd>You'll get an email reminder 30 days before the plan's end date with renewal options, so you can continue to get the best available rate on the market.</dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: supplierNote -->
+                                    <dt>Please Note</dt>
+                                    <dd><span data-bind="text: supplierNote"></span></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                    <!-- ko if: showDepositDisclaimer -->
+                                    <dt>Requirements</dt>
+                                    <dd><span data-bind="text: depositDisclaimerNote"></span></dd>
+                                    <br>
+                                    <!-- /ko -->
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center vpadding-20">
+                                <a class="btn btn-warning" target="_blank" data-bind="attr: { 'href': disclaimerPath }, visible: disclaimerPath">Disclaimer</a>
+                                <span class="hpadding-5"></span>
+                                <a class="btn btn-warning" target="_blank" data-bind="click: function() { return showTos($index()); }, attr: { 'href': tosPath }, visible: tosPath">Terms &amp; Conditions</a>
+                                <span class="hpadding-5"></span>
+                                <a class="btn btn-warning" target="_blank" data-bind="attr: { 'href': eflPath }, visible: eflPath && !$root.isNotResidential()">EFL</a>
+                                <span class="hpadding-5"></span>
+                                <a class="btn btn-warning" target="_blank" data-bind="attr: { 'href': yracPath }, visible: yracPath && !$root.isNotResidential()">YRAC</a>
+                                <br>
+                            </div>
+                            <form style="display: none" data-bind="attr: { 'id': 'tosForm' + templateIndex() + $index(), 'action': BASE_API_URL + 'tools/renderPDF' }" method="post" target="_blank">
+                                <input type="hidden" name="filePath" data-bind="value: originalTosPath">
+                                <input type="hidden" name="memento" data-bind="value: tosPathMemento">
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center vpadding-20">
+                                <hr/>
+                                <p class="text-danger" style="display: none" data-bind="visible: showSignUpWarning, text: signUpWarningText"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center vpadding-10 nopadding-x">
+                                <button type="button" class="btn btn-primary btn-lg" data-bind="click: $root.ChooseSupplier, enable: $root.chooseSupplierEnabled">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="navigationTemplate" type="text/html">
+        <!-- ko with: model -->
+        <div class="row vpadding-30">
+            <div class="col-sm-12">
+                <ul class="chevrons chevrons-default chevrons-justified">
+                    <li class="chevron" data-bind="click: NavigateToRatesPage, css: {'chevron-active': $parent.step != 'Select' && $parent.step != 'Done', 'chevron-complete': $parent.step == 'Select'}">
+                        <span class="chevron-text"><span>Select Plan</span></span>
+                        <div class="chevron-front"></div>
+                    </li>
+                    <li class="chevron" data-bind="click: NavigateToCustomerPage, css: {'chevron-active': $parent.step == 'Verify', 'chevron-complete': $parent.step == 'Enter' || $parent.step == 'Done', 'chevron-disabled': $parent.step == 'Select'}">
+                        <span class="chevron-text"><span>Enter Info</span></span>
+                        <div class="chevron-front"></div>
+                        <div class="chevron-back"></div>
+                    </li>
+                    <li class="chevron" data-bind="css: {'chevron-complete': $parent.step == 'Done' || $parent.step == 'Verify', 'chevron-disabled': $parent.step == 'Select' || $parent.step == 'Enter'}">
+                        <span class="chevron-text"><span>Verify</span></span>
+                        <div class="chevron-front"></div>
+                        <div class="chevron-back"></div>
+                    </li>
+                    <li class="chevron" data-bind="css: {'chevron-complete': $parent.step == 'Done', 'chevron-disabled': $parent.step != 'Done'}">
+                        <span class="chevron-text"><span>Done!</span></span>
+                        <div class="chevron-back"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /ko -->
+    </script>
+    <script src="https://cdn.ywxi.net/js/1.js" type="text/javascript" async></script>
+
+    <!-- Custom Power Kiosk Direct Functions -->
+    <script src='assets/js/v7/pk.min.js'></script>
+
+    <!-- Start Up -->
+    <script type='text/javascript'>
+        var API_KEY = "<you api key>";
+        var agentId = "<your sales code>";
+        var eCommerceVM = new PowerKioskECommerce(agentId, function(vm) {
+            CheckLocationHash(vm, true);
+            CheckLocationParams(vm);
+            vm.shouldScrollForRatesButton(false);
+        });
+
+        $(function() {
+            // Now that everything is done, apply the knockout bindings to the page
+            ko.applyBindings(eCommerceVM);
+
+            // Now we can call things on the DOM because the html has be bound
+            InitResponsiveHandlersAndSkrollr();
+        });
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584c30ff57cde1f9"></script>
+</body>
+
+</html>
